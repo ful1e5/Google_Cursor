@@ -2,7 +2,7 @@
 Linux Cursor Theme Inspire on Google
 
 ##### This Cursor In BETA Version
-![alt text] (https://github.com/KaizIqbal/Google_Cursor/blob/master/Image/All_cursor.png)
+![alt text](https://github.com/KaizIqbal/Google_Cursor/blob/master/Image/All_cursor.png)
 
 # Installation Using GIT
 Follow Command
