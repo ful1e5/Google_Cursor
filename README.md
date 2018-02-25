@@ -14,7 +14,7 @@ Follow Command
       $ sudo chmod +x ./Installer_Google.sh
       $ sudo ./Installer_Google.sh  
 # Stable Version
- You are Search for stable version of this project click ['here'] (https://www.opendesktop.org/p/1215613/).
+ You are Search for stable version of this project click ['here'](https://www.opendesktop.org/p/1215613/).
 # Build
 ## Build Dependancy
 ### Inkscape
