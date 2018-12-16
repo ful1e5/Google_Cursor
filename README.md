@@ -1,5 +1,5 @@
 <a href="https://github.com/KaizIqbal/Google_Cursor">
-  <p align="center"><img title="Google" src="https://github.com/KaizIqbal/Google_Cursor/blob/master/image/.png"></p>
+  <p align="center"><img title="Google" src="path:/images/Google.png"></p>
 </a>
 
 [![HitCount](http://hits.dwyl.io/KaizIqbal/Bibata_Google.svg)](http://hits.dwyl.io/KaizIqbal/Google_Cursor)
