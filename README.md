@@ -124,8 +124,6 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 
 issue [#8](https://github.com/KaizIqbal/Google_Cursor/issues/8) @ [Bibata_Cursor]()
 
-## Work in progress
-
 ## Gallery
 
 <p align="center"><img title="Google Cursor" src="https://github.com/KaizIqbal/Google_Cursor/blob/dev/Image/All_cursor.png">
