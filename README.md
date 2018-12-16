@@ -1,5 +1,5 @@
 <a href="https://github.com/KaizIqbal/Google_Cursor">
-  <p align="center"><img title="Google" src="./image/Google.png"></p>
+  <p align="center"><img title="Google" src="https://github.com/KaizIqbal/Google_Cursor/blob/dev/Image/Google.png"></p>
 </a>
 
 [![HitCount](http://hits.dwyl.io/KaizIqbal/Bibata_Google.svg)](http://hits.dwyl.io/KaizIqbal/Google_Cursor)
@@ -128,7 +128,7 @@ issue [#8](https://github.com/KaizIqbal/Google_Cursor/issues/8) @ [Bibata_Cursor
 
 ## Gallery
 
-<p align="center"><img title="Google Cursor" src="https://github.com/KaizIqbal/Google_Cursor/blob/master/image/.png">
+<p align="center"><img title="Google Cursor" src="https://github.com/KaizIqbal/Google_Cursor/blob/dev/Image/All_cursor.png">
 </br><sub>Google Cursor</sub></p>
 
 ## Bugs
