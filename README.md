@@ -24,7 +24,6 @@
 
 I'll release messages on
 
-- [Google+](https://plus.google.com/+KaizKhatri)
 - [MeWe](https://www.mewe.com/i/kaizkhatri)
 - [Twitter](https://twitter.com/ful1e5_)
 
