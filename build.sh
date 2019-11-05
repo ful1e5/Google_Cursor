@@ -162,7 +162,7 @@ echo -e "\033[0KGenerating Installer... DONE"
 echo -ne "Making Installer Executable...\\r"
     if ! [ -e "$OUTPUT_Google/$INDEX_Google" ] ; then
         cd "$( dirname "${BASH_SOURCE[0]}" )" || exit
-        gksu chmod +x Installer_Google.sh
+        gksu chmod +x Installer_Google.sh || sudo chmod +x Installer_Google.sh
     fi
 
 show_Msg() {
