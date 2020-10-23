@@ -1,22 +1,22 @@
-<a href="https://github.com/KaizIqbal/Google_Cursor">
-  <p align="center"><img title="Google" src="https://github.com/KaizIqbal/Google_Cursor/blob/dev/Image/Google.png"></p>
+<a href="https://github.com/ful1e5/Google_Cursor">
+  <p align="center"><img title="Google" src="https://github.com/ful1e5/Google_Cursor/blob/dev/Image/Google.png"></p>
 </a>
 
-[![HitCount](http://hits.dwyl.io/KaizIqbal/Bibata_Google.svg)](http://hits.dwyl.io/KaizIqbal/Google_Cursor)
+[![HitCount](http://hits.dwyl.io/ful1e5/Bibata_Google.svg)](http://hits.dwyl.io/ful1e5/Google_Cursor)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![GitHub contributors](https://img.shields.io/github/contributors/KaizIqbal/Google_Cursor.svg)](https://GitHub.com/KaizIqbal/Google_Cursor/graphs/contributors/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/KaizIqbal/Google_Cursor/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/ful1e5/Google_Cursor.svg)](https://GitHub.com/ful1e5/Google_Cursor/graphs/contributors/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/ful1e5/Google_Cursor/graphs/commit-activity)
 ![PRs](https://img.shields.io/badge/PRs-Welcome-red.svg)
 [![Donate](https://img.shields.io/badge/Donate-yes-yellow.svg)](https://www.paypal.me/kaizkhatri)
-[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://github.com/KaizIqbal/Google_Cursor/blob/master/CODE_OF_CONDUCT.md)
+[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://github.com/ful1e5/Google_Cursor/blob/master/CODE_OF_CONDUCT.md)
 
 ![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
 ![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)
 
-[![GitHub forks](https://img.shields.io/github/forks/KaizIqbal/Google_Cursor.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/KaizIqbal/Google_Cursor/network)
-[![GitHub watchers](https://img.shields.io/github/watchers/KaizIqbal/Google_Cursor.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/KaizIqbal/Google_Cursor/watchers/)
-[![GitHub stars](https://img.shields.io/github/stars/KaizIqbal/Google_Cursor.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/KaizIqbal/Google_Cursor/stargazers/)
-[![GitHub followers](https://img.shields.io/github/followers/KaizIqbal.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/KaizIqbal?tab=followers)
+[![GitHub forks](https://img.shields.io/github/forks/ful1e5/Google_Cursor.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ful1e5/Google_Cursor/network)
+[![GitHub watchers](https://img.shields.io/github/watchers/ful1e5/Google_Cursor.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/ful1e5/Google_Cursor/watchers/)
+[![GitHub stars](https://img.shields.io/github/stars/ful1e5/Google_Cursor.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/ful1e5/Google_Cursor/stargazers/)
+[![GitHub followers](https://img.shields.io/github/followers/ful1e5.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/ful1e5?tab=followers)
 
 <br />
 
@@ -74,7 +74,7 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 
 ## Installation
 
-**Note :** Latest `Stable` & `BETA` releases can be downloaded from [Here](https://github.com/KaizIqbal/Google_Cursor/releases)
+**Note :** Latest `Stable` & `BETA` releases can be downloaded from [Here](https://github.com/ful1e5/Google_Cursor/releases)
 
 ### Build From Source Code
 
@@ -82,7 +82,7 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 
 2. **Build & Install**:
    ```bash
-   $git clone https://github.com/KaizIqbal/Google_Cursor.git
+   $git clone https://github.com/ful1e5/Google_Cursor.git
    $cd Google_Cursor/
    $chmod +x build.sh
    $./build.sh
@@ -121,20 +121,20 @@ Currently I'm making lots of Linux Themes to Improve [Linux](https://en.wikipedi
 
 ##### _Inherits_ Problem
 
-issue [#8](https://github.com/KaizIqbal/Google_Cursor/issues/8) @ [Bibata_Cursor]()
+issue [#8](https://github.com/ful1e5/Google_Cursor/issues/8) @ [Bibata_Cursor]()
 
 ## Gallery
 
-<p align="center"><img title="Google Cursor" src="https://github.com/KaizIqbal/Google_Cursor/blob/dev/Image/All_cursor.png">
+<p align="center"><img title="Google Cursor" src="https://github.com/ful1e5/Google_Cursor/blob/dev/Image/All_cursor.png">
 </br><sub>Google Cursor</sub></p>
 
 ## Bugs
 
-Bugs should be reported [here](https://github.com/KaizIqbal/Google_Cursor/issues) on the Github issues page.
+Bugs should be reported [here](https://github.com/ful1e5/Google_Cursor/issues) on the Github issues page.
 
 ## License and Terms
 
-`Google Cursor SET` Collection is available under the terms of the GPL-3.0 license See [`LICENSE`](https://github.com/KaizIqbal/Google_Cursor/blob/master/LICENSE) for details.
+`Google Cursor SET` Collection is available under the terms of the GPL-3.0 license See [`LICENSE`](https://github.com/ful1e5/Google_Cursor/blob/master/LICENSE) for details.
 
 ## Getting help
 
@@ -147,7 +147,7 @@ Any suggestions for features and contributions to the continuing code masterelop
 ###
 
 <p align="center"></br>
-<a style="text-decoration: none;color:#009688;margin:0;padding:0 0 10px 0" href="https://github.com/KaizIqbal">
+<a style="text-decoration: none;color:#009688;margin:0;padding:0 0 10px 0" href="https://github.com/ful1e5">
 <span style="font-size:15px">Your Boy</span></br>
 <span style="font-size:20px">Kaiz Khatri</span>
 <h1 align="center">.^.</h1>

@@ -1,4 +1,4 @@
-# Contributing to Googele Cursor
+# Contributing to Google Cursor
 
 I love your input! I want to make contributing to this project as easy and transparent as possible, whether it's:
 
@@ -25,7 +25,7 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 
 In short, when you submit code changes, your submissions are understood to be under the same [GPL - 3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## Report bugs using Github's [issues](https://github.com/KaizIqbal/Google_Cursor/issues)
+## Report bugs using Github's [issues](https://github.com/ful1e5/Google_Cursor/issues)
 
 I use GitHub issues to track public bugs. Report a bug by opening a new issue, it's that easy!
 
