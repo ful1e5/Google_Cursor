@@ -45,7 +45,7 @@ People _love_ thorough bug reports. I'm not even kidding.
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under its `GPL - 3.0` License.
+By contributing, you agree that your contributions will be licensed under its `GPL-3.0` License.
 
 ## References
 
