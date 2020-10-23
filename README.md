@@ -8,7 +8,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/ful1e5/Google_Cursor/graphs/commit-activity)
 ![PRs](https://img.shields.io/badge/PRs-Welcome-red.svg)
 [![Donate](https://img.shields.io/badge/Donate-yes-yellow.svg)](https://www.paypal.me/kaizkhatri)
-[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://github.com/ful1e5/Google_Cursor/blob/master/CODE_OF_CONDUCT.md)
+[![Code Of Conduct](https://img.shields.io/badge/COC-yes-pink.svg)](https://github.com/ful1e5/Google_Cursor/blob/main/CODE_OF_CONDUCT.md)
 
 ![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
 ![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)
@@ -134,7 +134,7 @@ Bugs should be reported [here](https://github.com/ful1e5/Google_Cursor/issues) o
 
 ## License and Terms
 
-`Google Cursor SET` Collection is available under the terms of the GPL-3.0 license See [`LICENSE`](https://github.com/ful1e5/Google_Cursor/blob/master/LICENSE) for details.
+`Google Cursor SET` Collection is available under the terms of the GPL-3.0 license See [`LICENSE`](https://github.com/ful1e5/Google_Cursor/blob/main/LICENSE) for details.
 
 ## Getting help
 
@@ -142,7 +142,7 @@ You can create a issue, I will help you.
 
 ## Contributions and Suggestions
 
-Any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
+Any suggestions for features and contributions to the continuing code mainelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
 
 ###
 
