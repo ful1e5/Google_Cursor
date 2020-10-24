@@ -7,6 +7,15 @@
   "author": "Kaiz Khatri",
   "license": "GPL-3.0",
   "private": true,
+  "scripts": {
+    "clean": "rm -rf bitmaps themes",
+    "dev": "nodemon src/index.ts",
+    "watch": "nodemon --inspect src/index.ts",
+    "py_install": "pip install -r requirements.txt",
+    "render": "npx ts-node src/index.ts",
+    "build": "python build.py",
+    "compile": "yarn clean && yarn render && yarn build"
+  },
   "devDependencies": {
     "@types/pixelmatch": "^5.2.2",
     "@types/pngjs": "^3.4.2",
