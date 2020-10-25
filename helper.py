@@ -36,7 +36,7 @@ def init_build() -> None:
     with open("./package.json", "r") as package_file:
         data = json.loads(package_file.read())
         version = data['version']
-        print("⚡ Apple Cursor Version %s" % version)
+        print("⚡ GoogleDot Builder  %s" % version)
 
     # cleanup old packages
     if path.exists(package_dir):
