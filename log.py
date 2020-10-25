@@ -2,5 +2,9 @@
 
 import logging
 
-logging.basicConfig(filename='build.log', filemode='w',
-                    format='%(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+logging.basicConfig(
+    filename="build.log",
+    filemode="w",
+    format="%(name)s - %(levelname)s - %(message)s",
+    level=logging.DEBUG,
+)

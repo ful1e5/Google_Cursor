@@ -1,4 +1,3 @@
-import json
 import log
 from clickgen import build_cursor_theme
 
@@ -8,10 +7,8 @@ from helper import init_build, pack_it
 
 def build() -> None:
     init_build()
-    with open('./hotspots.json', 'r') as hotspot_file:
-        hotspots = json.loads(hotspot_file.read())
-        build_cursor_theme(name, image_dir=bitmaps_dir,
-                           cursor_sizes=sizes, out_path=temp_folder, hotspots=hotspots, archive=False, delay=delay)
+    build_cursor_theme(name, image_dir=bitmaps_dir,
+                        cursor_sizes=sizes, out_path=temp_folder, hotspots=None, archive=False, delay=delay)
     pack_it()
 
 

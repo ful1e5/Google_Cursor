@@ -2,7 +2,16 @@ import shutil
 import json
 import sys
 
-from config import name, temp_folder, bitmaps_dir, win_out, x11_out, window_install_inf_content, windows_cursors, package_dir
+from config import (
+    name,
+    temp_folder,
+    bitmaps_dir,
+    win_out,
+    x11_out,
+    window_install_inf_content,
+    windows_cursors,
+    package_dir,
+)
 from os import path, listdir, rename, remove
 
 
@@ -30,13 +39,13 @@ def window_bundle() -> None:
 
 def init_build() -> None:
     """
-        Print build version.
-        Remove previously built packages && Check Bitmaps.
+    Print build version.
+    Remove previously built packages && Check Bitmaps.
     """
     with open("./package.json", "r") as package_file:
         data = json.loads(package_file.read())
-        version = data['version']
-        print("⚡ GoogleDot Builder  %s" % version)
+        version = data["version"]
+        print("⚡ GoogleDot Builder v%s" % version)
 
     # cleanup old packages
     if path.exists(package_dir):
@@ -45,13 +54,14 @@ def init_build() -> None:
     # Checking Bitmaps directory
     if not path.exists(bitmaps_dir):
         print(
-            "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps")
+            "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps"
+        )
         sys.exit(1)
 
 
 def pack_it() -> None:
     """
-        Create Crisp 📦 Packages for Windows & X11 Cursor Theme.
+    Create Crisp 📦 Packages for Windows & X11 Cursor Theme.
     """
     # Rename directory
     shutil.move(path.join(temp_folder, name, "x11"), x11_out_dir)
