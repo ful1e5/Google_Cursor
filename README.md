@@ -176,3 +176,34 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 - [clickgen](https://pypi.org/project/clickgen/s)
 - [Pillow](https://pypi.org/project/Pillow/)
 
+## Build From Scratch
+
+### ⚡ Auto Build (using GitHub Actions)
+
+GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/Google_Cursor/tree/main/.github/workflows) directory.
+
+### Manual Build
+
+#### Setup python environment
+
+```bash
+python3 -m pip install --upgrade pip                 # Update pip to latest
+python3 -m pip3 install virtualenv                   # Install python virtual environment
+virtualenv venv                                      # Create new virtualenv named `venv`
+source venv/bin/activate                             # Activate virtualenv
+
+# For Deactivate virtualenv
+deactivate
+```
+
+#### Compile From Source
+
+> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
+
+```bash
+yarn install                                         # Install all Node Packages
+yarn py_install                                      # Install all PyPi Packages
+yarn compile                                         # Compile the cursor theme
+```
+
+After build `bitmaps` and `themes` directory are generated at project **root**.
