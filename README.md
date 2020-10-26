@@ -90,3 +90,12 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
 ![#4285F4](https://imgur.com/NXEup6E.png)
 ![#FFFFFF](https://imgur.com/cvFxSBb.png)
 
+#### Quick install
+
+<p align="center">
+  <a href="https://www.pling.com/p/1215613/" >
+    <img title="GoogleDot Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
+  </a>
+</p>
+
+
