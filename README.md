@@ -98,4 +98,27 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
   </a>
 </p>
 
+### Manual Install
+
+#### Linux/X11
+
+```bash
+# extract `GoogleDot.tar.gz`
+tar -xvf GoogleDot.tar.gz
+
+# For local users
+mv GoogleDot ~/.icons/
+
+# For all users
+sudo mv GoogleDot /usr/share/icons/
+```
+
+
+#### Windows
+
+1. unzip `GoogleDot_Windows.zip` file
+2. Open `GoogleDot_Windows/` in Explorer, and **right click** on `install.inf`.
+3. Click 'Install' from the context menu, and authorize the modifications to your system.
+4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **GoogleDot Cursors**.
+5. Click '**Apply**'.
 
