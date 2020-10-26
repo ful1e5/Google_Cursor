@@ -54,6 +54,7 @@
   <a href="https://www.python.org/">
     <img alt="License" src="https://img.shields.io/badge/-Python-yellow?logo=python" />
   </a>
+
  <!-- Fourth Row -->
   <br />
   <a href="https://github.com/ful1e5">
@@ -62,3 +63,9 @@
 </p>
 
 ---
+
+<!-- Intro -->
+
+# GoogleDot Cursor
+
+Cursor theme inspired on **google material design** for `Windows` and `Linux` with _HiDPi Support_ 🎉.
