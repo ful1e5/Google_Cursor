@@ -69,3 +69,24 @@
 # GoogleDot Cursor
 
 Cursor theme inspired on **google material design** for `Windows` and `Linux` with _HiDPi Support_ 🎉.
+
+#### Cursor Sizes
+
+<kbd>22</kbd>
+<kbd>24</kbd>
+<kbd>28</kbd>
+<kbd>32</kbd>
+<kbd>40</kbd>
+<kbd>48</kbd>
+<kbd>56</kbd>
+<kbd>64</kbd>
+<kbd>72</kbd>
+<kbd>80</kbd>
+<kbd>88</kbd>
+<kbd>96</kbd>
+
+#### Colors
+
+![#4285F4](https://imgur.com/NXEup6E.png)
+![#FFFFFF](https://imgur.com/cvFxSBb.png)
+
