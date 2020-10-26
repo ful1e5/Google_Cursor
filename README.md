@@ -207,3 +207,24 @@ yarn compile                                         # Compile the cursor theme
 ```
 
 After build `bitmaps` and `themes` directory are generated at project **root**.
+
+### Install Build Theme
+
+All builded cursor themes are available inside `themes` directory.
+
+#### Linux
+
+```bash
+cd ./themes
+rm -rf ~/.icons/GoogleDot && cp GoogleDot ~/.icons/   # installing Theme to local user(recommend)
+```
+
+#### Windows
+
+1. unzip `GoogleDot_Windows.zip` file
+2. Open the `settings` app.
+3. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
+4. **Goto** the `pointers` tab.
+5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `GoogleDot_Windows` folder.
+6. Click "**save as**" and type in the desired name.
+7. Click "**apply**" and "**ok**".
