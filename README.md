@@ -122,3 +122,57 @@ sudo mv GoogleDot /usr/share/icons/
 4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **GoogleDot Cursors**.
 5. Click '**Apply**'.
 
+<!-- Build Dependencies -->
+
+# Dependencies
+
+## Runtime Dependencies
+
+- libxcursor-dev
+- libx11-dev
+- libpng-dev (<=1.6)
+
+#### Install Runtime Dependencies
+
+##### macOS
+
+```bash
+brew cask install xquartz libpng
+```
+
+##### Debain/ubuntu
+
+```bash
+sudo apt install libx11-dev libxcursor-dev libpng-dev
+```
+
+##### ArchLinux/Manjaro
+
+```bash
+sudo pacman -S libx11 libxcursor libpng
+```
+
+##### Fedora/Fedora Silverblue/CentOS/RHEL
+
+```bash
+sudo dnf install libx11-devel libxcursor-devel libpng-devel
+```
+
+## Build Dependencies
+
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [python](https://www.python.org/downloads/) (<=3.6)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
+
+### Node Packages
+
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+
+### PyPi Packages
+
+- [clickgen](https://pypi.org/project/clickgen/s)
+- [Pillow](https://pypi.org/project/Pillow/)
+
