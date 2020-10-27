@@ -9,9 +9,9 @@
 <!-- Badges -->
 <p align="center">
   <!-- First Row -->
-  <!-- <a href="https://github.com/ful1e5/Google_Cursor/actions?query=workflow%3Abuild">
+  <a href="https://github.com/ful1e5/Google_Cursor/actions?query=workflow%3Abuild">
     <img alt="GitHub Action Build" src="https://github.com/ful1e5/Google_Cursor/workflows/build/badge.svg" width="102" />
-  </a> -->
+  </a>
   
   <a href="https://www.codefactor.io/repository/github/ful1e5/google_cursor">
     <img src="https://www.codefactor.io/repository/github/ful1e5/google_cursor/badge" alt="CodeFactor" />
