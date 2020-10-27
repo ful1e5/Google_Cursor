@@ -1,5 +1,5 @@
 <p align="center">
-    GoogleDot Cursor
+    <img src="https://i.imgur.com/nooUY96.png" width="120" alt="GoogleDot" />
 </p>
 
 <p align="center">
@@ -97,6 +97,19 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
     <img title="GoogleDot Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
   </a>
 </p>
+
+#### Preview:
+
+> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/Google_Cursor/blob/main/src/svg/README.md)
+
+<!-- Preview -->
+
+<p align="center">
+  <img title="GoogleDot" src="https://imgur.com/osnWiED.png">
+  </br>
+  <sub>GoogleDot Cursors 🍭</sub>
+</p>
+
 
 ### Manual Install
 
