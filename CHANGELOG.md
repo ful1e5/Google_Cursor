@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- Figma file added in **src/svg/README.md**
+
 ## [v1.0.0] - 27 Oct 2020
 
 ### Added

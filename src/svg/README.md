@@ -47,6 +47,6 @@
 |       <img src="./static/zoom_in.svg" width="20%"/>       |       zoom_in.svg       |                             `None`                              |                              |
 |      <img src="./static/zoom_out.svg" width="20%"/>       |      zoom_out.svg       |                             `None`                              |                              |
 
-<!-- ## Figma File -->
+## Figma File
 
-<!-- [![Figma File](https://i.imgur.com/88WNsyi.png)](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1) -->
+[![Figma File](https://imgur.com/RjoqfTo.png)](https://www.figma.com/file/i7nfGDWCTWlNJlnhmvHDfh/Google-Cursor?node-id=0%3A1)
