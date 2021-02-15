@@ -8,17 +8,17 @@ from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
 
-from xbpkg.constants import AUTHOR, COMMENT, THEME_NAME, URL
-from xbpkg.symlinks import add_missing_xcursor
+from gbpkg.constants import AUTHOR, COMMENT, THEME_NAME, URL
+from gbpkg.symlinks import add_missing_xcursor
 
 
 def xbuild(
     config: Dict[str, Dict[str, Any]],
     x_out_dir: Path,
 ) -> None:
-    """Build `macOSBigSur` cursor theme for only `X11`(UNIX) platform.
+    """Build `GoogleDot` cursor theme for only `X11`(UNIX) platform.
 
-    :config: (Dict) `macOSBigSur` configuration.
+    :config: (Dict) `GoogleDot` configuration.
 
     :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
     """
@@ -39,9 +39,9 @@ def xbuild(
 
 
 def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
-    """Build `macOSBigSur` cursor theme for only `Windows` platforms.
+    """Build `GoogleDot` cursor theme for only `Windows` platforms.
 
-    :config: (Dict) `macOSBigSur` configuration.
+    :config: (Dict) `GoogleDot` configuration.
 
     :win_out_dir: (Path) Path to the output directory, Where the `Windows` cursor theme package will generate. It also creates a directory if not exists.
     """
@@ -74,9 +74,9 @@ def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
 def build(
     config: Dict[str, Dict[str, Any]], x_out_dir: Path, win_out_dir: Path
 ) -> None:
-    """Build `macOSBigSur` cursor theme for `X11` & `Windows` platforms.
+    """Build `GoogleDot` cursor theme for `X11` & `Windows` platforms.
 
-    :config: (Dict) `macOSBigSur` configuration.
+    :config: (Dict) `GoogleDot` configuration.
 
     :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
 

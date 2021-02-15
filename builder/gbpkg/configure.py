@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Tuple, TypeVar, Union
 
 from clickgen.util import LikePath, PNGProvider
 
-from xbpkg.constants import WIN_CURSORS_CFG, WIN_DELAY, X_CURSORS_CFG, X_DELAY
+from gbpkg.constants import WIN_CURSORS_CFG, WIN_DELAY, X_CURSORS_CFG, X_DELAY
 
 
 X = TypeVar("X")
@@ -17,7 +17,7 @@ def to_tuple(x: X) -> Tuple[X, X]:
 
 
 def get_config(bitmaps_dir: Union[str, Path], **kwargs) -> Dict[str, Any]:
-    """Return configuration of `macOSBigSur` pointers.
+    """Return configuration of `GoogleDot` pointers.
 
     Args:
 
