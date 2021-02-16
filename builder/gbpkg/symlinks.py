@@ -2,13 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import os
-from pathlib import Path
 from typing import Dict, List, Union
 
-from clickgen.util import LikePath, chdir
+from clickgen.util import chdir
 
 
-def add_missing_xcursor(directory: Union[str, Path]) -> None:
+def add_missing_xcursor(directory) -> None:
     """Add missing `XCursor` to the Unix cursor package.
 
     :directory: (Path|str) directory where XCursors are available.
@@ -51,18 +50,36 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
         },
         {
             "src": "cross",
-            "links": ["cross_reverse", "diamond_cross", "tcross", "color-picker"],
-        },
-        {
-            "src": "crossed_circle",
             "links": [
+                "cross_reverse",
+                "diamond_cross",
+                "tcross",
+                "color-picker",
+                # crosshair
+                "crosshair",
+            ],
+        },
+        # {
+        #     "src": "crossed_circle",
+        #     "links": [
+        #         "03b6e0fcb3499374a867c041f52298f0",
+        #         "not-allowed",
+        #         "forbidden",
+        #         "circle",
+        #     ],
+        # },
+        {
+            "src": "dnd_no_drop",
+            "links": [
+                "no-drop",
+                # crossed_circle symlinks
+                "crossed_circle",
                 "03b6e0fcb3499374a867c041f52298f0",
                 "not-allowed",
                 "forbidden",
                 "circle",
             ],
         },
-        {"src": "dnd_no_drop", "links": ["no-drop"]},
         {"src": "dotbox", "links": ["dot_box_mask", "draped_box", "icon", "target"]},
         {"src": "hand1", "links": ["grab", "openhand"]},
         {
@@ -74,7 +91,15 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
                 "pointing_hand",
             ],
         },
-        {"src": "left_ptr", "links": ["arrow", "default"]},
+        {
+            "src": "left_ptr",
+            "links": [
+                "arrow",
+                "default",
+                # center_ptr symlinks
+                "center_ptr",
+            ],
+        },
         {
             "src": "left_ptr_watch",
             "links": [
@@ -84,7 +109,7 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
                 "progress",
             ],
         },
-        {"src": "left_side", "links": ["w-resize", "right_side", "e-resize"]},
+        # {"src": "left_side", "links": ["w-resize", "right_side", "e-resize"]},
         {
             "src": "link",
             "links": [
@@ -121,7 +146,7 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
                 "dnd-ask",
             ],
         },
-        {"src": "right_ptr", "links": ["draft_large", "draft_small"]},
+        {"src": "right_ptr", "links": ["draft_large", "draft_small"]},  # required
         {"src": "sb_down_arrow", "links": ["down-arrow"]},
         {
             "src": "sb_h_double_arrow",
@@ -134,6 +159,11 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
                 "size-hor",
                 "size_hor",
                 "split_h",
+                # left_side symlinks
+                "left_side",
+                "w-resize",
+                "right_side",
+                "e-resize",
             ],
         },
         {"src": "sb_left_arrow", "links": ["left-arrow"]},
@@ -151,9 +181,14 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
                 "size_ver",
                 "split_v",
                 "v_double_arrow",
+                # top_side symlinks
+                "top_side",
+                "s-resize",
+                "n-resize",
+                "bottom_side",
             ],
         },
-        {"src": "top_side", "links": ["s-resize", "n-resize", "bottom_side"]},
+        # {"src": "top_side", "links": ["s-resize", "n-resize", "bottom_side"]},
         {"src": "wait", "links": ["watch"]},
         {"src": "X_cursor", "links": ["pirate", "x-cursor"]},
         {"src": "xterm", "links": ["ibeam", "text"]},

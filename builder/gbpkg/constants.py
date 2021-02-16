@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from typing import Dict, List, Tuple
+from typing import Any, Dict
 
 # Info
 THEME_NAME = "GoogleDot"
@@ -24,18 +24,14 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "bottom_left_corner.png": {"xhot": 100, "yhot": 100},
     "bottom_right_corner.png": {"xhot": 100, "yhot": 100},
     "bottom_tee.png": {"xhot": 100, "yhot": 100},
-    "center_ptr.png": {"xhot": 100, "yhot": 100},
     "context-menu.png": {"xhot": 100, "yhot": 100},
     "copy.png": {"xhot": 100, "yhot": 100},
     "cross.png": {"xhot": 100, "yhot": 100},
-    "crossed_circle.png": {"xhot": 100, "yhot": 100},
-    "crosshair.png": {"xhot": 100, "yhot": 100},
     "dnd_no_drop.png": {"xhot": 100, "yhot": 100},
     "dotbox.png": {"xhot": 100, "yhot": 100},
     "hand1.png": {"xhot": 100, "yhot": 100},
     "hand2.png": {"xhot": 100, "yhot": 100},
     "left_ptr.png": {"xhot": 100, "yhot": 100},
-    "left_side.png": {"xhot": 100, "yhot": 100},
     "left_tee.png": {"xhot": 100, "yhot": 100},
     "link.png": {"xhot": 100, "yhot": 100},
     "ll_angle.png": {"xhot": 100, "yhot": 100},
@@ -52,7 +48,6 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "sb_right_arrow.png": {"xhot": 100, "yhot": 100},
     "sb_up_arrow.png": {"xhot": 100, "yhot": 100},
     "sb_v_double_arrow.png": {"xhot": 100, "yhot": 100},
-    "top_side.png": {"xhot": 100, "yhot": 100},
     "top_tee.png": {"xhot": 100, "yhot": 100},
     "ul_angle.png": {"xhot": 100, "yhot": 100},
     "ur_angle.png": {"xhot": 100, "yhot": 100},
@@ -85,7 +80,7 @@ WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
     "xterm.png": {"to": "IBeam", "position": "top_left"},
     "hand2.png": {"to": "Link", "position": "top_left"},
     "hand1.png": {"to": "Move"},
-    "crossed_circle.png": {"to": "Unavailiable", "position": "top_left"},
+    "dnd_no_drop.png": {"to": "Unavailiable", "position": "top_left"},
     "sb_v_double_arrow.png": {"to": "Vertical"},
     ############
     # Animated #

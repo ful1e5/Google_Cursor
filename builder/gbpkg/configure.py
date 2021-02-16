@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 
 from typing import Any, Dict, Tuple, TypeVar
+
 from clickgen.util import PNGProvider
+
 from gbpkg.constants import WIN_CURSORS_CFG, WIN_DELAY, X_CURSORS_CFG, X_DELAY
 
 
@@ -56,12 +58,14 @@ def get_config(bitmaps_dir, **kwargs) -> Dict[str, Any]:
     config: Dict[str, Any] = {}
 
     for key, item in X_CURSORS_CFG.items():
-        x_hot: int = item.get("xhot", 0)
-        y_hot: int = item.get("yhot", 0)
+        x_hot: int = int(item.get("xhot", 0))
+        y_hot: int = int(item.get("yhot", 0))
         hotspot: Tuple[int, int] = (x_hot, y_hot)
 
-        delay: int = item.get("delay", X_DELAY)
+        delay: int = int(item.get("delay", X_DELAY))
         png = png_provider.get(key)
+        if not png:
+            raise FileNotFoundError(f"{key} not found")
 
         data = {
             "png": png,
@@ -73,10 +77,10 @@ def get_config(bitmaps_dir, **kwargs) -> Dict[str, Any]:
         win_data = WIN_CURSORS_CFG.get(key)
 
         if win_data:
-            win_key = win_data.get("to")
+            win_key: str = str(win_data.get("to"))
 
-            position = win_data.get("position", "center")
-            win_delay = win_data.get("delay", WIN_DELAY)
+            position: str = str(win_data.get("position", "center"))
+            win_delay: int = int(win_data.get("delay", WIN_DELAY))
 
             canvas_size = win_data.get("canvas_size", w_canvas_size)
             win_size = win_data.get("size", w_size)
