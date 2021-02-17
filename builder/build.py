@@ -8,8 +8,8 @@ from gbpkg.configure import get_config
 from gbpkg.generator import xbuild, wbuild, build
 
 parser = argparse.ArgumentParser(
-    prog="xcursor_pro_builder",
-    description="'XCursor-Pro' cursor build python script.",
+    prog="google_dot_builder",
+    description="'GoogleDot' cursor build python script.",
 )
 
 # Positional Args.
@@ -96,8 +96,8 @@ args = parser.parse_args()
 
 bitmaps_dir = Path(args.png_dir)
 
-x_out_dir = Path(args.out_dir) / "XCursor-Pro"
-win_out_dir = Path(args.out_dir) / "XCursor-Pro_Windows"
+x_out_dir = Path(args.out_dir) / "GoogleDot"
+win_out_dir = Path(args.out_dir) / "GoogleDot_Windows"
 
 config = get_config(
     bitmaps_dir,

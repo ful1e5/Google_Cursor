@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from typing import Any, Dict
+from typing import Dict
 
 # Info
 THEME_NAME = "GoogleDot"
@@ -10,7 +10,7 @@ AUTHOR = "Kaiz Khatri"
 URL = "https://github.com/ful1e5/Google_Cursor"
 
 # XCursor
-X_DELAY: int = 25
+X_DELAY: int = 10
 
 
 # Windows Cursor
@@ -72,8 +72,8 @@ WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
     "right_ptr.png": {"to": "Alternate", "position": "top_right"},
     "cross.png": {"to": "Cross"},
     "left_ptr.png": {"to": "Default", "position": "top_left"},
-    "bottom_left_corner.png": {"to": "Diagonal_1"},
-    "bottom_right_corner.png": {"to": "Diagonal_2"},
+    "bottom_right_corner.png": {"to": "Diagonal_1"},
+    "bottom_left_corner.png": {"to": "Diagonal_2"},
     "pencil.png": {"to": "Handwriting"},
     "question_arrow.png": {"to": "Help", "position.png": "top_left"},
     "sb_h_double_arrow.png": {"to": "Horizontal"},
