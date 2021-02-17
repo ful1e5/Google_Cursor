@@ -24,7 +24,8 @@
   </a>
 
   <a href="https://github.com/puppeteer/puppeteer/">
-    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/Google_Cursor/puppeteer">
+    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/Google_Cursor/puppeteer?filename=bitmapper%2Fpackage.json">
+
   </a>
 
   <a href="https://github.com/ful1e5/clickgen">
@@ -100,7 +101,7 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
 
 #### Preview:
 
-> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/Google_Cursor/blob/main/src/svg/README.md)
+> Check Figma file [here](https://www.figma.com/file/i7nfGDWCTWlNJlnhmvHDfh/Google-Cursor?node-id=0%3A1)
 
 <!-- Preview -->
 
@@ -109,7 +110,6 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
   </br>
   <sub>GoogleDot Cursors 🍭</sub>
 </p>
-
 
 ### Manual Install
 
@@ -126,7 +126,6 @@ mv GoogleDot ~/.icons/
 sudo mv GoogleDot /usr/share/icons/
 ```
 
-
 #### Windows
 
 1. unzip `GoogleDot_Windows.zip` file
@@ -139,18 +138,19 @@ sudo mv GoogleDot /usr/share/icons/
 
 # Dependencies
 
-## Runtime Dependencies
+## External Libraries
 
-- libxcursor-dev
-- libx11-dev
-- libpng-dev (<=1.6)
+-   libxcursor
+-   libx11
+-   libpng (<=1.6)
 
-#### Install Runtime Dependencies
+#### Install External Libraries
 
 ##### macOS
 
 ```bash
-brew cask install xquartz libpng
+brew install --cask xquartz
+brew install libpng
 ```
 
 ##### Debain/ubuntu
@@ -168,26 +168,46 @@ sudo pacman -S libx11 libxcursor libpng
 ##### Fedora/Fedora Silverblue/CentOS/RHEL
 
 ```bash
-sudo dnf install libx11-devel libxcursor-devel libpng-devel
+sudo dnf install libX11-devel libXcursor-devel libpng-devel
 ```
 
 ## Build Dependencies
 
-- [nodejs](https://nodejs.org/en/) (<=12.x.x)
-- [yarn](https://classic.yarnpkg.com/en/docs/install/)
-- [python](https://www.python.org/downloads/) (<=3.6)
-- [pip3](https://pip.pypa.io/en/stable/installing/)
+-   [gcc](https://gcc.gnu.org/install/)
+-   [make](https://www.gnu.org/software/make/)
+-   [nodejs](https://nodejs.org/en/) (<=12.x.x)
+-   [yarn](https://classic.yarnpkg.com/en/docs/install/)
+-   [python](https://www.python.org/downloads/) (<=3.8)
+-   [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
 
-- [puppeteer](https://www.npmjs.com/package/puppeteer)
-- [pngjs](https://www.npmjs.com/package/pngjs)
-- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+-   [puppeteer](https://www.npmjs.com/package/puppeteer)
+-   [pngjs](https://www.npmjs.com/package/pngjs)
+-   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
-- [clickgen](https://pypi.org/project/clickgen/s)
-- [Pillow](https://pypi.org/project/Pillow/)
+-   [clickgen](https://pypi.org/project/clickgen/s)
+
+## Build Dependencies
+
+-   [gcc](https://gcc.gnu.org/install/)
+-   [make](https://www.gnu.org/software/make/)
+-   [nodejs](https://nodejs.org/en/) (<=12.x.x)
+-   [yarn](https://classic.yarnpkg.com/en/docs/install/)
+-   [python](https://www.python.org/downloads/) (<=3.8)
+-   [pip3](https://pip.pypa.io/en/stable/installing/)
+
+### Node Packages
+
+-   [puppeteer](https://www.npmjs.com/package/puppeteer)
+-   [pngjs](https://www.npmjs.com/package/pngjs)
+-   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+
+### PyPi Packages
+
+-   [clickgen](https://pypi.org/project/clickgen/s)
 
 ## Build From Scratch
 
@@ -197,50 +217,44 @@ GitHub Actions is automatically runs on every `push`(on **main** and **dev** bra
 
 ### Manual Build
 
-#### Setup python environment
-
 ```bash
-python3 -m pip install --upgrade pip                 # Update pip to latest
-python3 -m pip3 install virtualenv                   # Install python virtual environment
-virtualenv venv                                      # Create new virtualenv named `venv`
-source venv/bin/activate                             # Activate virtualenv
-
-# For Deactivate virtualenv
-deactivate
+make
 ```
 
-#### Compile From Source
-
-> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
+#### Build `XCursor` theme
 
 ```bash
-yarn install                                         # Install all Node Packages
-yarn py_install                                      # Install all PyPi Packages
-yarn compile                                         # Compile the cursor theme
+make unix
 ```
 
-After build `bitmaps` and `themes` directory are generated at project **root**.
-
-### Install Build Theme
-
-All builded cursor themes are available inside `themes` directory.
-
-#### Linux
+#### Customize `XCursor` size
 
 ```bash
-cd ./themes
-rm -rf ~/.icons/GoogleDot && cp GoogleDot ~/.icons/   # installing Theme to local user(recommend)
+make unix X_SIZES=22            # Only built '22px' pixel-size.
+make unix X_SIZES=22 24 32      # Multiple sizes are provided with  ' '(Space)
 ```
 
-#### Windows
+#### Install `XCursor` theme
 
-1. unzip `GoogleDot_Windows.zip` file
-2. Open the `settings` app.
-3. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
-4. **Goto** the `pointers` tab.
-5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `GoogleDot_Windows` folder.
-6. Click "**save as**" and type in the desired name.
-7. Click "**apply**" and "**ok**".
+```bash
+make install            # install as user
+  # OR
+sudo make install       # install as root
+```
+
+#### Build `Windows` theme
+
+```bash
+make windows
+```
+
+#### Customize `Windows Cursor` size
+
+```bash
+make windows WIN_SIZE=96            # Supports only one pixel-size
+```
+
+> For installation follow [these](#windows) steps.
 
 <!-- Bug Report -->
 
