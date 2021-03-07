@@ -6,6 +6,6 @@ export const matchImages = (img1: Buffer, img2: Buffer): number => {
 	const { data: imgNData } = PNG.sync.read(img2);
 
 	return Pixelmatch(img1Data, imgNData, null, width, height, {
-		threshold: 0.001,
+		threshold: 0.1,
 	});
 };
