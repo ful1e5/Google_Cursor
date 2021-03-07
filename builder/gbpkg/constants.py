@@ -4,8 +4,6 @@
 from typing import Dict
 
 # Info
-THEME_NAME = "GoogleDot"
-COMMENT = "Cursor theme inspired on Google"
 AUTHOR = "Kaiz Khatri"
 URL = "https://github.com/ful1e5/Google_Cursor"
 

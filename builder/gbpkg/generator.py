@@ -2,19 +2,21 @@
 # -*- coding: utf-8 -*-
 
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, NamedTuple
 
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
-from gbpkg.constants import AUTHOR, COMMENT, THEME_NAME, URL
+from gbpkg.constants import AUTHOR, URL
 from gbpkg.symlinks import add_missing_xcursor
 
 
-def xbuild(
-    config: Dict[str, Dict[str, Any]],
-    x_out_dir: Path,
-) -> None:
+class Info(NamedTuple):
+    name: str
+    comment: str
+
+
+def xbuild(config: Dict[str, Dict[str, Any]], x_out_dir: Path, info: Info) -> None:
     """Build `GoogleDot` cursor theme for only `X11`(UNIX) platform.
 
     ```
@@ -23,6 +25,7 @@ def xbuild(
     :x_out_dir: (Path) Path to the output directory,
                        Where the `X11` cursor theme package will generate.
                        It also creates a directory if not exists.
+    :info: (Dict) Content theme name & comment
     ```
     """
 
@@ -38,10 +41,10 @@ def xbuild(
             XCursor.create(x_cfg, x_out_dir)
 
     add_missing_xcursor(x_out_dir / "cursors")
-    XPackager(x_out_dir, THEME_NAME, COMMENT)
+    XPackager(x_out_dir, info.name, info.comment)
 
 
-def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
+def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path, info: Info) -> None:
     """Build `GoogleDot` cursor theme for only `Windows` platforms.
 
     ```
@@ -50,6 +53,7 @@ def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
     :win_out_dir: (Path) Path to the output directory,
                         Where the `Windows` cursor theme package will generate.
                         It also creates a directory if not exists.
+    :info: (Dict) Content theme name & comment
     ```
     """
 
@@ -75,11 +79,11 @@ def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
                 print(f"Building '{win_cfg.stem}' Windows Cursor...")
                 WindowsCursor.create(win_cfg, win_out_dir)
 
-    WindowsPackager(win_out_dir, THEME_NAME, COMMENT, AUTHOR, URL)
+    WindowsPackager(win_out_dir, info.name, info.comment, AUTHOR, URL)
 
 
 def build(
-    config: Dict[str, Dict[str, Any]], x_out_dir: Path, win_out_dir: Path
+    config: Dict[str, Dict[str, Any]], x_out_dir: Path, win_out_dir: Path, info: Info
 ) -> None:
     """Build `GoogleDot` cursor theme for `X11` & `Windows` platforms.
 
@@ -93,6 +97,7 @@ def build(
     :win_out_dir: (Path) Path to the output directory,
                         Where the `Windows` cursor theme package will generate.
                         It also creates a directory if not exists.
+    :info: (Dict) Content theme name & comment
     ```
     """
 
@@ -124,6 +129,6 @@ def build(
                 win_build(item, alias)
 
     add_missing_xcursor(x_out_dir / "cursors")
-    XPackager(x_out_dir, THEME_NAME, COMMENT)
+    XPackager(x_out_dir, info.name, info.comment)
 
-    WindowsPackager(win_out_dir, THEME_NAME, COMMENT, AUTHOR, URL)
+    WindowsPackager(win_out_dir, info.name, info.comment, AUTHOR, URL)
