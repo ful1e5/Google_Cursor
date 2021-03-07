@@ -1,58 +1,22 @@
-<svg
-  width="200"
-  height="200"
-  viewBox="0 0 200 200"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-<g opacity="0.01">
-<path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
-</g>
-<g filter="url(#filter0_d)">
-<path
-      d="M35 175C29.4772 175 25 170.523 25 165V97C25 96.4174 25.0498 95.8465 25.1454 95.2912C27.5755 56.0635 60.1601 25 100 25C141.421 25 175 58.5786 175 100C175 139.84 143.937 172.424 104.709 174.855C104.153 174.95 103.583 175 103 175H35Z"
-      fill="white"
-    />
-</g>
-<path
-    d="M54.9333 152C51.1042 152 48 148.896 48 145.067V97.92C48 97.5161 48.0345 97.1202 48.1008 96.7353C49.7857 69.5373 72.3777 48 100 48C128.719 48 152 71.2812 152 100C152 127.622 130.463 150.214 103.265 151.899C102.88 151.965 102.484 152 102.08 152H54.9333Z"
-    fill="#4285F4"
-  />
-<defs>
-<filter
-      id="filter0_d"
-      x="13"
-      y="15"
-      width="174"
-      height="174"
-      filterUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
-    >
-<feFlood flood-opacity="0" result="BackgroundImageFix" />
-<feColorMatrix
-        in="SourceAlpha"
-        type="matrix"
-        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-      />
-<feMorphology
-        radius="2"
-        operator="dilate"
-        in="SourceAlpha"
-        result="effect1_dropShadow"
-      />
-<feOffset dy="2" />
-<feGaussianBlur stdDeviation="5" />
-<feColorMatrix
-        type="matrix"
-        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-      />
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-<feBlend
-        mode="normal"
-        in="SourceGraphic"
-        in2="effect1_dropShadow"
-        result="shape"
-      />
-</filter>
-</defs>
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <g opacity="0.01">
+    <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white"/>
+  </g>
+  <g filter="url(#filter0_d)">
+    <path d="M35 175C29.4772 175 25 170.523 25 165V97C25 96.4174 25.0498 95.8465 25.1454 95.2912C27.5755 56.0635 60.1601 25 100 25C141.421 25 175 58.5786 175 100C175 139.84 143.937 172.424 104.709 174.855C104.153 174.95 103.583 175 103 175H35Z" fill="white"/>
+  </g>
+  <path d="M54.9333 152C51.1042 152 48 148.896 48 145.067V97.92C48 97.5161 48.0345 97.1202 48.1008 96.7353C49.7857 69.5373 72.3777 48 100 48C128.719 48 152 71.2812 152 100C152 127.622 130.463 150.214 103.265 151.899C102.88 151.965 102.484 152 102.08 152H54.9333Z" fill="#4285F4"/>
+  <defs>
+    <filter id="filter0_d" x="13" y="15" width="174" height="174" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
 </svg>
