@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
   <g opacity="0.01">
-    <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white"/>
+    <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="#0000FF"/>
   </g>
   <g filter="url(#filter0_d)">
-    <circle cx="100" cy="100" r="75" fill="white"/>
+    <circle cx="100" cy="100" r="75" fill="#0000FF"/>
   </g>
-  <circle cx="100" cy="100" r="52" fill="#4285F4"/>
-  <rect x="76" y="108" width="17" height="17" rx="5" fill="white"/>
-  <rect x="108" y="76" width="17" height="17" rx="5" fill="white"/>
-  <rect x="108" y="108" width="17" height="17" rx="5" fill="white"/>
-  <rect x="76" y="76" width="17" height="17" rx="5" fill="white"/>
+  <circle cx="100" cy="100" r="52" fill="#00FF00"/>
+  <rect x="76" y="108" width="17" height="17" rx="5" fill="#0000FF"/>
+  <rect x="108" y="76" width="17" height="17" rx="5" fill="#0000FF"/>
+  <rect x="108" y="108" width="17" height="17" rx="5" fill="#0000FF"/>
+  <rect x="76" y="76" width="17" height="17" rx="5" fill="#0000FF"/>
   <defs>
     <filter id="filter0_d" x="13" y="15" width="174" height="174" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>

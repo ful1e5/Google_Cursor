@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
   <g opacity="0.01">
-    <path opacity="0.01" d="M180.005 16.6926H13.5V183.197H180.005V16.6926Z" fill="white"/>
+    <path opacity="0.01" d="M180.005 16.6926H13.5V183.197H180.005V16.6926Z" fill="#0000FF"/>
   </g>
   <g filter="url(#filter0_d)">
-    <rect x="13.7776" y="100.222" width="121.269" height="121.269" rx="30" transform="rotate(-45 13.7776 100.222)" fill="white"/>
+    <rect x="13.7776" y="100.222" width="121.269" height="121.269" rx="30" transform="rotate(-45 13.7776 100.222)" fill="#0000FF"/>
   </g>
-  <circle cx="98" cy="101" r="40" fill="#4285F4"/>
+  <circle cx="98" cy="101" r="40" fill="#00FF00"/>
   <defs>
     <filter id="filter0_d" x="1.77759" y="4.47247" width="195.5" height="195.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
