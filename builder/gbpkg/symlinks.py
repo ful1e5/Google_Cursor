@@ -55,19 +55,9 @@ def add_missing_xcursor(directory) -> None:
                 "diamond_cross",
                 "tcross",
                 "color-picker",
-                # crosshair
                 "crosshair",
             ],
         },
-        # {
-        #     "src": "crossed_circle",
-        #     "links": [
-        #         "03b6e0fcb3499374a867c041f52298f0",
-        #         "not-allowed",
-        #         "forbidden",
-        #         "circle",
-        #     ],
-        # },
         {
             "src": "dnd_no_drop",
             "links": [
@@ -96,7 +86,6 @@ def add_missing_xcursor(directory) -> None:
             "links": [
                 "arrow",
                 "default",
-                # center_ptr symlinks
                 "center_ptr",
             ],
         },
@@ -109,7 +98,6 @@ def add_missing_xcursor(directory) -> None:
                 "progress",
             ],
         },
-        # {"src": "left_side", "links": ["w-resize", "right_side", "e-resize"]},
         {
             "src": "link",
             "links": [
@@ -159,7 +147,6 @@ def add_missing_xcursor(directory) -> None:
                 "size-hor",
                 "size_hor",
                 "split_h",
-                # left_side symlinks
                 "left_side",
                 "w-resize",
                 "right_side",
@@ -181,14 +168,12 @@ def add_missing_xcursor(directory) -> None:
                 "size_ver",
                 "split_v",
                 "v_double_arrow",
-                # top_side symlinks
                 "top_side",
                 "s-resize",
                 "n-resize",
                 "bottom_side",
             ],
         },
-        # {"src": "top_side", "links": ["s-resize", "n-resize", "bottom_side"]},
         {"src": "wait", "links": ["watch"]},
         {"src": "X_cursor", "links": ["pirate", "x-cursor"]},
         {"src": "xterm", "links": ["ibeam", "text"]},

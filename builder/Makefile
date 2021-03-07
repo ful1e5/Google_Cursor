@@ -1,6 +1,4 @@
 
-all: clean setup build
-
 .PHONY: all
 
 .ONESHELL:

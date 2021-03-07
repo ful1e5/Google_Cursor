@@ -7,7 +7,6 @@ from typing import Any, Dict
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
-
 from gbpkg.constants import AUTHOR, COMMENT, THEME_NAME, URL
 from gbpkg.symlinks import add_missing_xcursor
 
