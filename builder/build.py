@@ -5,7 +5,7 @@ import argparse
 from pathlib import Path
 
 from gbpkg.configure import get_config
-from gbpkg.generator import xbuild, wbuild, build
+from gbpkg.generator import Info, build, wbuild, xbuild
 
 parser = argparse.ArgumentParser(
     prog="google_dot_builder",
@@ -95,9 +95,17 @@ parser.add_argument(
 args = parser.parse_args()
 
 bitmaps_dir = Path(args.png_dir)
+name = bitmaps_dir.stem
 
-x_out_dir = Path(args.out_dir) / "GoogleDot"
-win_out_dir = Path(args.out_dir) / "GoogleDot_Windows"
+comments = {
+    "GoogleDot-Blue": "Blue cursor theme inspired on Google",
+    "GoogleDot-Black": "Black cursor theme inspired on Google",
+}
+
+x_out_dir = Path(args.out_dir) / name
+win_out_dir = Path(args.out_dir) / f"{name}-Windows"
+
+print(f"Getting '{name}' bitmaps ready for build...")
 
 config = get_config(
     bitmaps_dir,
@@ -106,9 +114,11 @@ config = get_config(
     win_size=args.win_size,
 )
 
+info = Info(name=name, comment=comments.get(name, f"{name} Cursors"))
+
 if args.platform == "unix":
-    xbuild(config, x_out_dir)
+    xbuild(config, x_out_dir, info)
 elif args.platform == "windows":
-    wbuild(config, win_out_dir)
+    wbuild(config, win_out_dir, info)
 else:
-    build(config, x_out_dir, win_out_dir)
+    build(config, x_out_dir, win_out_dir, info)

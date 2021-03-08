@@ -1,23 +1,29 @@
-import path from "path";
-import { readdirSync, existsSync } from "fs";
+import { Colors } from "./core/types";
 
-// Directory resolve
-const projectRoot = path.resolve(__dirname, "../../");
-
-const outDir = path.resolve(projectRoot, "bitmaps");
-const staticSvgDir = path.resolve(projectRoot, "svg", "static");
-const animatedSvgDir = path.resolve(projectRoot, "svg", "animated");
-
-// Generate a svg list
-if (!existsSync(staticSvgDir) || !existsSync(animatedSvgDir)) {
-  throw new Error("svg directory not found");
+interface Config {
+	themeName: string;
+	color: Colors;
 }
 
-const staticCursors = readdirSync(staticSvgDir).map((f) =>
-  path.resolve(staticSvgDir, f)
-);
-const animatedCursors = readdirSync(animatedSvgDir).map((f) =>
-  path.resolve(animatedSvgDir, f)
-);
+const black = "#000000";
+const blue = "#4285F4";
+const white = "#FFFFFF";
 
-export { staticCursors, animatedCursors, outDir };
+const config: Config[] = [
+	{
+		themeName: "GoogleDot-Blue",
+		color: {
+			base: blue,
+			outline: white,
+		},
+	},
+	{
+		themeName: "GoogleDot-Black",
+		color: {
+			base: black,
+			outline: white,
+		},
+	},
+];
+
+export { config };
