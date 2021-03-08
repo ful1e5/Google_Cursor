@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="gbpkg",
-    version="1.0.1",
+    version="1.1.0",
     description="Generate 'GoogleDot' cursor theme from PNGs file",
     url="https://github.com/ful1e5/Google_Cursor",
     packages=["gbpkg"],

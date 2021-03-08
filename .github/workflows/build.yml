@@ -79,11 +79,11 @@ jobs:
       - name: Uploading `GoogleDot-Blue` Windows Theme artifact
         uses: actions/upload-artifact@v2
         with:
-          name: GoogleDot_Blue-Windows
+          name: GoogleDot-Blue-Windows
           path: themes/GoogleDot-Blue-Windows/*
 
       - name: Uploading `GoogleDot-Black` Windows Theme artifact
         uses: actions/upload-artifact@v2
         with:
-          name: GoogleDot_Black-Windows
+          name: GoogleDot-Black-Windows
           path: themes/GoogleDot-Black-Windows/*
