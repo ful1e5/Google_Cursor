@@ -106,9 +106,15 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
 <!-- Preview -->
 
 <p align="center">
-  <img title="GoogleDot" src="https://imgur.com/osnWiED.png">
+  <img title="GoogleDot Blue" src="https://imgur.com/osnWiED.png">
   </br>
-  <sub>GoogleDot Cursors 🍭</sub>
+  <sub>Blue GoogleDot Cursors 🍭</sub>
+</p>
+
+<p align="center">
+  <img title="GoogleDot Black" src="https://i.imgur.com/9ZlC1gD.png">
+  </br>
+  <sub>BlackBlue GoogleDot Cursors 🍭</sub>
 </p>
 
 ### Manual Install
@@ -120,16 +126,16 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
 tar -xvf GoogleDot.tar.gz
 
 # For local users
-mv GoogleDot ~/.icons/
+mv GoogleDot-* ~/.icons/
 
 # For all users
-sudo mv GoogleDot /usr/share/icons/
+sudo mv GoogleDot-* /usr/share/icons/
 ```
 
 #### Windows
 
-1. unzip `GoogleDot_Windows.zip` file
-2. Open `GoogleDot_Windows/` in Explorer, and **right click** on `install.inf`.
+1. unzip `.zip` file
+2. Open unziped directory in Explorer, and **right click** on `install.inf`.
 3. Click 'Install' from the context menu, and authorize the modifications to your system.
 4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **GoogleDot Cursors**.
 5. Click '**Apply**'.
@@ -140,9 +146,9 @@ sudo mv GoogleDot /usr/share/icons/
 
 ## External Libraries
 
--   libxcursor
--   libx11
--   libpng (<=1.6)
+- libxcursor
+- libx11
+- libpng (<=1.6)
 
 #### Install External Libraries
 
@@ -173,41 +179,41 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ## Build Dependencies
 
--   [gcc](https://gcc.gnu.org/install/)
--   [make](https://www.gnu.org/software/make/)
--   [nodejs](https://nodejs.org/en/) (<=12.x.x)
--   [yarn](https://classic.yarnpkg.com/en/docs/install/)
--   [python](https://www.python.org/downloads/) (<=3.8)
--   [pip3](https://pip.pypa.io/en/stable/installing/)
+- [gcc](https://gcc.gnu.org/install/)
+- [make](https://www.gnu.org/software/make/)
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [python](https://www.python.org/downloads/) (<=3.8)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
 
--   [puppeteer](https://www.npmjs.com/package/puppeteer)
--   [pngjs](https://www.npmjs.com/package/pngjs)
--   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
--   [clickgen](https://pypi.org/project/clickgen/s)
+- [clickgen](https://pypi.org/project/clickgen/s)
 
 ## Build Dependencies
 
--   [gcc](https://gcc.gnu.org/install/)
--   [make](https://www.gnu.org/software/make/)
--   [nodejs](https://nodejs.org/en/) (<=12.x.x)
--   [yarn](https://classic.yarnpkg.com/en/docs/install/)
--   [python](https://www.python.org/downloads/) (<=3.8)
--   [pip3](https://pip.pypa.io/en/stable/installing/)
+- [gcc](https://gcc.gnu.org/install/)
+- [make](https://www.gnu.org/software/make/)
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [python](https://www.python.org/downloads/) (<=3.8)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
 
--   [puppeteer](https://www.npmjs.com/package/puppeteer)
--   [pngjs](https://www.npmjs.com/package/pngjs)
--   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
--   [clickgen](https://pypi.org/project/clickgen/s)
+- [clickgen](https://pypi.org/project/clickgen/s)
 
 ## Build From Scratch
 
