@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **2-Space** format for `bitmapper`
+- Clean `builder` cache on every build (supported in `Makefile`)
 
 ### Changed
 
