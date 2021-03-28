@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- gbpkg supports **clickgen v1.1.9**
 - Install `gbpkg` builder python package as user
 - Removed python3 `virtualenv` commands from `builder/Makefile`
 
