@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **2-Space** format for `bitmapper`
 
+### Changed
+
+- Install `gbpkg` builder python package as user
+- Removed python3 `virtualenv` commands from `builder/Makefile`
+
 ## [v1.1.0] - 08 Mar 2021
 
 ### Added
