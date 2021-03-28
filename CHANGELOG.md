@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- **2-Space** format for `bitmapper`
+
 ## [v1.1.0] - 08 Mar 2021
 
 ### Added
