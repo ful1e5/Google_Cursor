@@ -56,7 +56,8 @@ jobs:
       - name: Compressing UNIX theme
         run: |
           tar -cvzf GoogleDot-Blue.tar.gz themes/GoogleDot-Blue
-          tar -cvzf GoogleDot-Black.tar.gz themes/GoogleDot-Blue
+          tar -cvzf GoogleDot-Black.tar.gz themes/GoogleDot-Black
+          tar -cvzf GoogleDot-White.tar.gz themes/GoogleDot-White
 
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
@@ -76,6 +77,12 @@ jobs:
           name: GoogleDot-Black
           path: GoogleDot-Black.tar.gz
 
+      - name: Uploading `GoogleDot-White` UNIX Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: GoogleDot-White
+          path: GoogleDot-White.tar.gz
+
       - name: Uploading `GoogleDot-Blue` Windows Theme artifact
         uses: actions/upload-artifact@v2
         with:
@@ -87,3 +94,9 @@ jobs:
         with:
           name: GoogleDot-Black-Windows
           path: themes/GoogleDot-Black-Windows/*
+
+      - name: Uploading `GoogleDot-White` Windows Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: GoogleDot-White-Windows
+          path: themes/GoogleDot-White-Windows/*
