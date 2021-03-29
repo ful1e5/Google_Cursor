@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- GoogleDot logo updated with white split
 - Preview section updated in **[README.md](./README.md)**
 - gbpkg supports **clickgen v1.1.9**
 - Install `gbpkg` builder python package as user
