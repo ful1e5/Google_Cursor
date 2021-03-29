@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://imgur.com/iiTtLiJ.png" width="120" alt="GoogleDot" />
+    <img src="https://i.imgur.com/kiQMiUy.png" width="120" alt="GoogleDot" />
 </p>
 
 <p align="center">
@@ -114,7 +114,13 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
 <p align="center">
   <img title="GoogleDot Black" src="https://i.imgur.com/9ZlC1gD.png">
   </br>
-  <sub>BlackBlue GoogleDot Cursors 🍭</sub>
+  <sub>Black GoogleDot Cursors 🍭</sub>
+</p>
+
+<p align="center">
+  <img title="GoogleDot White" src="https://i.imgur.com/67KgJ3s.png">
+  </br>
+  <sub>White GoogleDot Cursors 🍭</sub>
 </p>
 
 ### Manual Install

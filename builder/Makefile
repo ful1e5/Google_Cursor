@@ -7,6 +7,7 @@ all: clean setup build
 .ONESHELL:
 SHELL:=/bin/bash
 
+THEMES = Blue Black White
 X_SIZES ?=22 24 28 32 40 48 56 64 72 80 88 96
 WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
@@ -22,18 +23,13 @@ clean:
 	@fi
 
 setup: setup.py
-	@test -d venv || python3 -m venv venv
-	@. venv/bin/activate; python3 setup.py install --record files.txt
+	@python3 setup.py install --user --record files.txt
 
 build: setup build.py
-	@. venv/bin/activate; python3 build.py -p "$(bitmaps_dir)/GoogleDot-Blue" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-	@. venv/bin/activate; python3 build.py -p "$(bitmaps_dir)/GoogleDot-Black" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@$(foreach theme,$(THEMES), python3 build.py -p "$(bitmaps_dir)/GoogleDot-$(theme)" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE);)
 
 build_unix: setup build.py
-	@. venv/bin/activate; python3 build.py unix -p "$(bitmaps_dir)/GoogleDot-Blue" --xsizes $(X_SIZES)
-	@. venv/bin/activate; python3 build.py unix -p "$(bitmaps_dir)/GoogleDot-Black" --xsizes $(X_SIZES)
+	@$(foreach theme,$(THEMES), python3 build.py unix -p "$(bitmaps_dir)/GoogleDot-$(theme)" --xsizes $(X_SIZES);)
 
 build_windows: setup build.py
-	@. venv/bin/activate; python3 build.py windows -p "$(bitmaps_dir)/GoogleDot-Blue" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-	@. venv/bin/activate; python3 build.py windows -p "$(bitmaps_dir)/GoogleDot-Black" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
-
+	@$(foreach theme,$(THEMES), python3 build.py windows -p "$(bitmaps_dir)/GoogleDot-$(theme)" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE);)
