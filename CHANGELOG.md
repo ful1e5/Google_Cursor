@@ -9,13 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **2-Space** format for `bitmapper`
+- **GoogleDot White** version added
 - Clean `builder` cache on every build (supported in `Makefile`)
 - Dynamic build using **Make variables** inside `builder/Makefile`
+- **2-Space** format for `bitmapper`
 - Sphinx `reST` docstring in `builder/gbpkg`
 
 ### Changed
 
+- Preview section updated in **[README.md](./README.md)**
 - gbpkg supports **clickgen v1.1.9**
 - Install `gbpkg` builder python package as user
 - Removed python3 `virtualenv` commands from `builder/Makefile`
