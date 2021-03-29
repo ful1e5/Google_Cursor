@@ -100,6 +100,7 @@ name = bitmaps_dir.stem
 comments = {
     "GoogleDot-Blue": "Blue cursor theme inspired on Google",
     "GoogleDot-Black": "Black cursor theme inspired on Google",
+    "GoogleDot-White": "White cursor theme inspired on Google",
 }
 
 x_out_dir = Path(args.out_dir) / name
