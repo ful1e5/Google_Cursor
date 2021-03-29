@@ -24,6 +24,13 @@ const config: Config[] = [
       outline: white,
     },
   },
+  {
+    themeName: "GoogleDot-White",
+    color: {
+      base: white,
+      outline: black,
+    },
+  },
 ];
 
 export { config };
