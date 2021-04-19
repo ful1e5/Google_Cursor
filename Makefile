@@ -1,21 +1,4 @@
-theme := GoogleDot
-src := ./themes/$(theme)
-
-local := ~/.icons
-local_dest := $(local)/$(theme)
-
-root := /usr/share/icons
-root_dest := $(root)/$(theme)
-
 all: clean render build
-
-unix: clean render bitmaps
-	@cd builder && make build_unix clean
-
-windows: clean render bitmaps
-	@cd builder && make build_windows clean
-
-.PHONY: all
 
 clean:
 	@rm -rf bitmaps themes
@@ -26,27 +9,44 @@ render: bitmapper svg
 build: bitmaps
 	@cd builder && make build clean
 
+.PHONY: all
+
+
+unix: clean render bitmaps
+	@cd builder && make build_unix clean
+
+windows: clean render bitmaps
+	@cd builder && make build_windows clean
+
+
+# Installation
 .ONESHELL:
 SHELL:=/bin/bash
 
+src = ./themes/GoogleDot-*
+local := ~/.icons
+local_dest := $(local)/GoogleDot-*
 
-install: $(src)
+root := /usr/share/icons
+root_dest := $(root)/GoogleDot-*
+
+install: themes
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Installing '$(theme)' cursors inside $(local)/..."
+		@echo "> Installing 'GoogleDot' cursors inside $(local)/..."
 		@mkdir -p $(local)
-		@cp -r $(src) $(local_dest) && echo "> Installed!"
+		@cp -r $(src) $(local)/ && echo "> Installed!"
 	@else
-		@echo "> Installing '$(theme)' cursors inside $(root)/..."
+		@echo "> Installing 'GoogleDot' cursors inside $(root)/..."
 		@mkdir -p $(root)
-		@sudo cp -r $(src) $(root_dest) && echo "> Installed!"
+		@sudo cp -r $(src) $(root)/ && echo "> Installed!"
 	@fi
 
 uninstall:
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Removing '$(local_dest)'..."
+		@echo "> Removing 'GoogleDot' cursors from '$(local)'..."
 		@rm -rf $(local_dest)
 	@else
-		@echo "> Removing '$(root_dest)'..."
+		@echo "> Removing 'GoogleDot' cursors from '$(root)'..."
 		@sudo rm -rf $(root_dest)
 	@fi
 
