@@ -16,25 +16,29 @@ def to_tuple(x: X) -> Tuple[X, X]:
 def get_config(bitmaps_dir, **kwargs) -> Dict[str, Any]:
     """Return configuration of `GoogleDot` pointers.
 
-
     :param bitmaps_dir: Path to .png file's directory.
-    :type bitmaps_dir: Union[str, Path]
+    :type bitmaps_dir: ``str`` or  ``pathlib.Path``
 
-    :param \**kwargs:
-            See below
+    :param **kwargs:
+        See below
 
-        :Keyword Arguments:
-            * *x_sizes* (``List[int]``) --
-              List of pixel-sizes for xcursors.
-            * *win_canvas_size* (``int``) --
-              Windows cursor's canvas pixel-size.
-            * *win_size* (``int``) --
-              Pixel-size for Windows cursor.
+    :Keyword Arguments:
+        * *x_sizes* (``List[int]``) --
+          List of pixel-sizes for xcursors.
+        * *win_canvas_size* (``int``) --
+          Windows cursor's canvas pixel-size.
+        * *win_size* (``int``) --
+          Pixel-size for Windows cursor.
 
     Example:
 
     ```python
-        get_config("./bitmaps", x_sizes=[24, 32], win_canvas_size=32, win_size=24)
+        get_config(
+            bitmaps_dir="./bitmaps",
+            x_sizes=[24, 28, 32],
+            win_canvas_size=32,
+            win_size=24,
+        )
     ```
     """
 
