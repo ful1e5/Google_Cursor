@@ -12,6 +12,15 @@ from gbpkg.symlinks import add_missing_xcursor
 
 
 class Info(NamedTuple):
+    """Theme basic information.
+
+    :param name: Theme title.
+    :type name: ``str``
+
+    :param comment: quick information about theme.
+    :type comment: ``str``
+    """
+
     name: str
     comment: str
 
@@ -63,9 +72,9 @@ def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path, info: Info) -> 
 
             if item.get("win_key"):
                 win_cfg = alias.reproduce(
-                    item["win_size"],
-                    item["canvas_size"],
-                    item["position"],
+                    size=item["win_size"],
+                    canvas_size=item["canvas_size"],
+                    position=item["position"],
                     delay=item["win_delay"],
                 ).rename(item["win_key"])
 
@@ -107,9 +116,9 @@ def build(
 
             if item.get("win_key"):
                 win_cfg = alias.reproduce(
-                    item["win_size"],
-                    item["canvas_size"],
-                    item["position"],
+                    size=item["win_size"],
+                    canvas_size=item["canvas_size"],
+                    position=item["position"],
                     delay=item["win_delay"],
                 ).rename(item["win_key"])
 
