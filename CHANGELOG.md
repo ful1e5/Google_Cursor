@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- builder module moved to "src" directory.
+- tidy `gbpkg.generator` module.(Merged #11)
+
 ### Changed
 
-- Makefile target re-arrange & installation process updated
+- Makefile target re-arrange & installation process updated (Merged #10)
 
 ## [v1.1.1] - 29 Mar 2021
 
