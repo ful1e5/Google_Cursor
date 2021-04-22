@@ -4,8 +4,8 @@
 import argparse
 from pathlib import Path
 
-from gbpkg.configure import get_config
-from gbpkg.generator import Info, build, wbuild, xbuild
+from gdbuild.configure import get_config
+from gdbuild.generator import Info, build, wbuild, xbuild
 
 parser = argparse.ArgumentParser(
     prog="google_dot_builder",
@@ -105,6 +105,12 @@ comments = {
 
 x_out_dir = Path(args.out_dir) / name
 win_out_dir = Path(args.out_dir) / f"{name}-Windows"
+
+# Windows Canvas & Cursor sizes
+win_size: int = args.win_size
+win_canvas_size: int = args.win_canvas_size
+if win_canvas_size < win_size:
+    win_canvas_size = win_size
 
 print(f"Getting '{name}' bitmaps ready for build...")
 

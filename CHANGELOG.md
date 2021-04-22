@@ -15,6 +15,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Makefile target re-arrange & installation process updated (Merged #10)
+- Compact code inside `builder/*`
+- Remove `setup.py`
+- Builder module renamed to `gdbuild`
+- Import `gdbuild` module directly inside `build.py`
+- Windows **True HiDPi Supports** inside build.py
 
 ## [v1.1.1] - 29 Mar 2021
 

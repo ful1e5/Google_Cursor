@@ -7,8 +7,8 @@ from typing import Any, Dict, NamedTuple
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
-from gbpkg.constants import AUTHOR, URL
-from gbpkg.symlinks import add_missing_xcursor
+from .constants import AUTHOR, URL
+from .symlinks import add_missing_xcursor
 
 
 class Info(NamedTuple):
