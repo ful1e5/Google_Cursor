@@ -4,8 +4,8 @@
 import argparse
 from pathlib import Path
 
-from gbpkg.configure import get_config
-from gbpkg.generator import Info, build, wbuild, xbuild
+from gdbuild.configure import get_config
+from gdbuild.generator import Info, build, wbuild, xbuild
 
 parser = argparse.ArgumentParser(
     prog="google_dot_builder",
