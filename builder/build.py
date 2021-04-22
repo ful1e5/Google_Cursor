@@ -106,6 +106,12 @@ comments = {
 x_out_dir = Path(args.out_dir) / name
 win_out_dir = Path(args.out_dir) / f"{name}-Windows"
 
+# Windows Canvas & Cursor sizes
+win_size: int = args.win_size
+win_canvas_size: int = args.win_canvas_size
+if win_canvas_size < win_size:
+    win_canvas_size = win_size
+
 print(f"Getting '{name}' bitmaps ready for build...")
 
 config = get_config(
