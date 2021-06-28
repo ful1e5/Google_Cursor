@@ -1,9 +1,9 @@
 <p align="center">
-    <img src="https://i.imgur.com/kiQMiUy.png" width="120" alt="GoogleDot" />
+  <img src="https://i.imgur.com/DCRvZPL.png" width="120" alt="GoogleDot" />
 </p>
 
 <p align="center">
-    🍭 Cursor theme inspired on Google
+  🍭 Cursor theme inspired on Google
 </p>
 
 <!-- Badges -->
@@ -12,7 +12,7 @@
   <a href="https://github.com/ful1e5/Google_Cursor/actions?query=workflow%3Abuild">
     <img alt="GitHub Action Build" src="https://github.com/ful1e5/Google_Cursor/workflows/build/badge.svg" width="102" />
   </a>
-  
+
   <a href="https://www.codefactor.io/repository/github/ful1e5/google_cursor">
     <img src="https://www.codefactor.io/repository/github/ful1e5/google_cursor/badge" alt="CodeFactor" />
   </a>
@@ -31,7 +31,7 @@
   <a href="https://github.com/ful1e5/clickgen">
     <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
   </a>
-  
+
   <!-- Second Row -->
   <br />
   <a href="https://github.com/ful1e5/Google_Cursor/releases">

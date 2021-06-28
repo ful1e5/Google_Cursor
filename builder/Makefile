@@ -2,7 +2,7 @@ bitmaps_dir = "../bitmaps"
 
 .PHONY: all
 
-all: clean setup build
+all: setup build
 
 .ONESHELL:
 SHELL:=/bin/bash
@@ -11,10 +11,6 @@ THEMES = Blue Black White
 X_SIZES ?=22 24 28 32 40 48 56 64 72 80 88 96
 WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
-
-clean:
-	@find -iname "*.pyc" -delete
-	@python3 -m pip uninstall -y clickgen
 
 setup:
 	@python3 -m pip install clickgen==1.1.9 --user
