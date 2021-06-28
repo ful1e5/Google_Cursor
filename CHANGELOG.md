@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.1.2] - 28 Jun 2021
+
 ### Added
 
 - builder module moved to "src" directory.
@@ -83,7 +85,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.1...main
+[unreleased]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.2...main
+[v1.1.2]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.0...v1.1.2
 [v1.1.1]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.0...v1.1.1
 [v1.1.0]: https://github.com/ful1e5/Google_Cursor/compare/v1.0.1...v1.1.0
 [v1.0.1]: https://github.com/ful1e5/Google_Cursor/compare/v1.0.0...v1.0.1
