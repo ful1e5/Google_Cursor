@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Makefile target re-arrange & installation process updated (Merged #10)
+- Removed **clean** target from `builder/Makefile`
 - Compact code inside `builder/*`
 - Remove `setup.py`
 - Builder module renamed to `gdbuild`
