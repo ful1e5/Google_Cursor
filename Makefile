@@ -7,16 +7,16 @@ render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
 build: bitmaps
-	@cd builder && make build clean
+	@cd builder && make build
 
 .PHONY: all
 
 
 unix: clean render bitmaps
-	@cd builder && make build_unix clean
+	@cd builder && make build_unix
 
 windows: clean render bitmaps
-	@cd builder && make build_windows clean
+	@cd builder && make build_windows
 
 
 # Installation
