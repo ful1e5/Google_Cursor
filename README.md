@@ -123,6 +123,13 @@ Cursor theme inspired on **google material design** for `Windows` and `Linux` wi
   <sub>White GoogleDot Cursors 🍭</sub>
 </p>
 
+### Install with package manager
+
+#### ArchLinux/Manjaro (AUR)
+```bash
+yay -S googledot-cursor-theme
+```
+
 ### Manual Install
 
 #### Linux/X11
