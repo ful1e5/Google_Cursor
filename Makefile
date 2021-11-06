@@ -51,3 +51,14 @@ uninstall:
 	@fi
 
 reinstall: uninstall install
+
+# generates binaries
+BIN_DIR = ../bin
+THEMES = Blue Black White
+prepare: bitmaps themes
+	@rm -rf bin && mkdir bin
+	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
+	@cd themes
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/GoogleDot-$(theme).tar.gz GoogleDot-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/GoogleDot-$(theme)-Windows.zip GoogleDot-$(theme)-Windows;)
+	@cd ..
