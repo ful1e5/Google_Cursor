@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `prepare` target added inside `Makefile`
 - `GoogleDot-Red` variant added ( fixed #21 )
 - Distributed binaries in `bin` directory
+- Compressed `GoogleDot-Red` artifacts #21
 
 ### Changed
 

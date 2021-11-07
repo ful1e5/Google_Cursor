@@ -58,6 +58,7 @@ jobs:
           tar -cvzf GoogleDot-Blue.tar.gz themes/GoogleDot-Blue
           tar -cvzf GoogleDot-Black.tar.gz themes/GoogleDot-Black
           tar -cvzf GoogleDot-White.tar.gz themes/GoogleDot-White
+          tar -cvzf GoogleDot-Red.tar.gz themes/GoogleDot-Red
 
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
