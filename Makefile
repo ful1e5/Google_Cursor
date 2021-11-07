@@ -22,31 +22,32 @@ windows: clean render bitmaps
 # Installation
 .ONESHELL:
 SHELL:=/bin/bash
+THEME_PREFIX = GoogleDot
 
-src = ./themes/GoogleDot-*
+src = ./themes/$(THEME_PREFIX)-*
 local := ~/.icons
-local_dest := $(local)/GoogleDot-*
+local_dest := $(local)/$(THEME_PREFIX)-*
 
 root := /usr/share/icons
-root_dest := $(root)/GoogleDot-*
+root_dest := $(root)/$(THEME_PREFIX)-*
 
 install: themes
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Installing 'GoogleDot' cursors inside $(local)/..."
+		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(local)/..."
 		@mkdir -p $(local)
 		@cp -r $(src) $(local)/ && echo "> Installed!"
 	@else
-		@echo "> Installing 'GoogleDot' cursors inside $(root)/..."
+		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(root)/..."
 		@mkdir -p $(root)
 		@sudo cp -r $(src) $(root)/ && echo "> Installed!"
 	@fi
 
 uninstall:
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Removing 'GoogleDot' cursors from '$(local)'..."
+		@echo "> Removing '$(THEME_PREFIX)' cursors from '$(local)'..."
 		@rm -rf $(local_dest)
 	@else
-		@echo "> Removing 'GoogleDot' cursors from '$(root)'..."
+		@echo "> Removing '$(THEME_PREFIX)' cursors from '$(root)'..."
 		@sudo rm -rf $(root_dest)
 	@fi
 
@@ -57,8 +58,10 @@ BIN_DIR = ../bin
 THEMES = Blue Black White Red
 prepare: bitmaps themes
 	@rm -rf bin && mkdir bin
-	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
+	@cd bitmaps
+	@$(foreach theme,$(THEMES), mkdir -p bin/$(THEME_PREFIX)-$(theme);)
+	@cd ..
 	@cd themes
-	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/GoogleDot-$(theme).tar.gz GoogleDot-$(theme);)
-	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/GoogleDot-$(theme)-Windows.zip GoogleDot-$(theme)-Windows;)
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/$(THEME_PREFIX)-$(theme).tar.gz $(THEME_PREFIX)-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/$(THEME_PREFIX)-$(theme)-Windows.zip $(THEME_PREFIX)-$(theme)-Windows;)
 	@cd ..
