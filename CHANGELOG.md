@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - prepare command fixed inside `Makefile`
+- builder module renamed to `src` from `gdbuild`
 
 ## [v1.1.2] - 28 Jun 2021
 
