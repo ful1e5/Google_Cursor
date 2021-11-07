@@ -2,8 +2,8 @@ all: install render
 
 .PHONY: all
 
-install: node_modules package.json 
-	@yarn install 
+install: node_modules package.json
+	@yarn install
 
 render:
 	@yarn render

@@ -7,7 +7,7 @@ all: setup build
 .ONESHELL:
 SHELL:=/bin/bash
 
-THEMES = Blue Black White
+THEMES = Blue Black White Red
 X_SIZES ?=22 24 28 32 40 48 56 64 72 80 88 96
 WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24

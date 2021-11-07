@@ -2,7 +2,7 @@ all: clean render build
 
 clean:
 	@rm -rf bitmaps themes
-	
+
 render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
@@ -54,7 +54,7 @@ reinstall: uninstall install
 
 # generates binaries
 BIN_DIR = ../bin
-THEMES = Blue Black White
+THEMES = Blue Black White Red
 prepare: bitmaps themes
 	@rm -rf bin && mkdir bin
 	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..

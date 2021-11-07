@@ -8,6 +8,7 @@ interface Config {
 const black = "#000000";
 const blue = "#4285F4";
 const white = "#FFFFFF";
+const red = "#FF0000";
 
 const config: Config[] = [
   {
@@ -29,6 +30,13 @@ const config: Config[] = [
     color: {
       base: white,
       outline: black,
+    },
+  },
+  {
+    themeName: "GoogleDot-Red",
+    color: {
+      base: red,
+      outline: white,
     },
   },
 ];

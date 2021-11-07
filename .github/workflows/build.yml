@@ -83,6 +83,12 @@ jobs:
           name: GoogleDot-White
           path: GoogleDot-White.tar.gz
 
+      - name: Uploading `GoogleDot-Red` UNIX Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: GoogleDot-Red
+          path: GoogleDot-Red.tar.gz
+
       - name: Uploading `GoogleDot-Blue` Windows Theme artifact
         uses: actions/upload-artifact@v2
         with:
@@ -100,3 +106,9 @@ jobs:
         with:
           name: GoogleDot-White-Windows
           path: themes/GoogleDot-White-Windows/*
+
+      - name: Uploading `GoogleDot-Red` Windows Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: GoogleDot-Red-Windows
+          path: themes/GoogleDot-Red-Windows/*
