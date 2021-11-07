@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- prepare command fixed inside `Makefile`
+
 ## [v1.1.2] - 28 Jun 2021
 
 ### Added
