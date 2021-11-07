@@ -51,19 +51,19 @@ yay -S googledot-cursor-theme
 <p align="center">
   <img title="GoogleDot Blue" src="https://imgur.com/osnWiED.png">
   </br>
-  <sub>Blue GoogleDot Cursors 🍭</sub>
+  <sub>Blue GoogleDot Cursors</sub>
 </p>
 
 <p align="center">
   <img title="GoogleDot Black" src="https://i.imgur.com/9ZlC1gD.png">
   </br>
-  <sub>Black GoogleDot Cursors 🍭</sub>
+  <sub>Black GoogleDot Cursors</sub>
 </p>
 
 <p align="center">
   <img title="GoogleDot White" src="https://i.imgur.com/67KgJ3s.png">
   </br>
-  <sub>White GoogleDot Cursors 🍭</sub>
+  <sub>White GoogleDot Cursors</sub>
 </p>
 
 ### Manual Install
@@ -215,7 +215,7 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 
 # Bugs
 
-Bugs 🐛 should be reported [here](https://github.com/ful1e5/Google_Cursor/issues) on the Github issues page.
+Bugs should be reported [here](https://github.com/ful1e5/Google_Cursor/issues) on the Github issues page.
 
 <!-- Help -->
 
@@ -232,10 +232,6 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contr
 <!-- Support -->
 
 ## Support
-
-Give a **★** or Follow on [GitHub](https://github.com/ful1e5),That's work as **Steroid 💉** for me. 😉
-
-> For extra support
 
 <a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
   <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
