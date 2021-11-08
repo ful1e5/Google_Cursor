@@ -1,6 +1,6 @@
 # Google Cursor
 
-An opensource cursor theme inspired by Google.
+An OpenSource cursor theme inspired by Google.
 
 [![Build](https://github.com/ful1e5/Google_Cursor/workflows/build/badge.svg)](https://github.com/ful1e5/Google_Cursor/actions?query=workflow%3Abuild)
 [![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/google_cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/google_cursor)
@@ -50,20 +50,20 @@ yay -S googledot-cursor-theme
 
 <p align="center">
   <img title="GoogleDot Blue" src="https://imgur.com/osnWiED.png">
-  </br>
-  <sub>Blue GoogleDot Cursors</sub>
 </p>
 
 <p align="center">
   <img title="GoogleDot Black" src="https://i.imgur.com/9ZlC1gD.png">
-  </br>
-  <sub>Black GoogleDot Cursors</sub>
 </p>
 
 <p align="center">
   <img title="GoogleDot White" src="https://i.imgur.com/67KgJ3s.png">
   </br>
-  <sub>White GoogleDot Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="GoogleDot Red" src="https://imgur.com/VtauWGC.png">
+  </br>
 </p>
 
 ### Manual Install

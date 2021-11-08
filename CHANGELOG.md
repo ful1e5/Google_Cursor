@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `GoogleDot-Red` variant added ( fixed #21 )
 - Distributed binaries in `bin` directory
 - Compressed `GoogleDot-Red` artifacts #21
+- GoogleDot-Red preview added inside README.md
 
 ### Changed
 
