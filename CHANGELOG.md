@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - prepare command fixed inside `Makefile`
 - builder module renamed to `src` from `gdbuild`
 - simplify `README.md`
+- Added color hex with GitHub markdown inside README.md
 
 ## [v1.1.2] - 28 Jun 2021
 

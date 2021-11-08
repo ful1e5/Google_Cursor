@@ -23,8 +23,10 @@ An OpenSource cursor theme inspired by Google.
 
 #### Colors
 
-![#4285F4](https://imgur.com/NXEup6E.png)
-![#FFFFFF](https://imgur.com/cvFxSBb.png)
+`#4285F4`
+`#FFFFFF`
+`#FF0000`
+`#000000`
 
 ### Quick install
 
