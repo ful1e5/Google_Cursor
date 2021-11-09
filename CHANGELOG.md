@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.1.3] - 09 Nov 2021
+
 ### Added
 
 - `prepare` target added inside `Makefile`
