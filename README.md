@@ -30,11 +30,10 @@ An OpenSource cursor theme inspired by Google.
 
 ### Quick install
 
-<p align="center">
-  <a href="https://www.pling.com/p/1215613/" >
-    <img title="GoogleDot Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
-  </a>
-</p>
+- GoogleDot Blue: [https://www.pling.com/p/1215613](https://www.pling.com/p/1215613)
+- GoogleDot White: [https://www.pling.com/p/1638257](https://www.pling.com/p/1638257)
+- GoogleDot Black: [https://www.pling.com/p/1638261](https://www.pling.com/p/1638261)
+- GoogleDot Red: [https://www.pling.com/p/1638262](https://www.pling.com/p/1638262)
 
 #### Install with package manager
 
