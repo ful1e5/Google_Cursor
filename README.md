@@ -1,10 +1,10 @@
 # Google Cursor
 
-An OpenSource cursor theme inspired by Google.
-
 [![Build](https://github.com/ful1e5/Google_Cursor/workflows/build/badge.svg)](https://github.com/ful1e5/Google_Cursor/actions?query=workflow%3Abuild)
 [![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/google_cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/google_cursor)
 [![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
+
+An OpenSource cursor theme inspired by Google.
 
 #### Cursor Sizes
 
@@ -23,10 +23,10 @@ An OpenSource cursor theme inspired by Google.
 
 #### Colors
 
-`#4285F4`
-`#FFFFFF`
-`#FF0000`
-`#000000`
+![#4285F4](https://imgur.com/5JDaAgn.png)
+![#FFFFFF](https://imgur.com/xEOJfWR.png)
+![#000000](https://imgur.com/2xpuRiQ.png)
+![#FF0000](https://imgur.com/VXRoCTW.png)
 
 ### Quick install
 
@@ -46,8 +46,6 @@ yay -S googledot-cursor-theme
 ### Preview:
 
 > Check Figma file [here](https://www.figma.com/file/i7nfGDWCTWlNJlnhmvHDfh/Google-Cursor?node-id=0%3A1)
-
-<!-- Preview -->
 
 <p align="center">
   <img title="GoogleDot Blue" src="https://imgur.com/osnWiED.png">
@@ -89,8 +87,6 @@ sudo mv GoogleDot-* /usr/share/icons/
 3. Click 'Install' from the context menu, and authorize the modifications to your system.
 4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **GoogleDot Cursors**.
 5. Click '**Apply**'.
-
-<!-- Build Dependencies -->
 
 # Dependencies
 
@@ -212,19 +208,13 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 
 > For installation follow [these](#windows) steps.
 
-<!-- Bug Report -->
-
 # Bugs
 
 Bugs should be reported [here](https://github.com/ful1e5/Google_Cursor/issues) on the Github issues page.
 
-<!-- Help -->
-
 # Getting Help
 
 You can create a **issue**, I will help you. 🙂
-
-<!-- Contributions and Suggestion -->
 
 # Contributing
 

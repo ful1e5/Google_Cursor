@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+### Changed
+
+- colors preview with `.png` file in README.md
+- sponsorships updated
+
 ## [v1.1.3] - 09 Nov 2021
 
 ### Added
