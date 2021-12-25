@@ -88,6 +88,7 @@ def add_missing_xcursor(directory) -> None:
                 "arrow",
                 "default",
                 "center_ptr",
+                "top_left_arrow",
             ],
         },
         {
