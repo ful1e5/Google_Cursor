@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.0] - 22 October 2022
+
 ### Added
 
 - Refactor: build with `clickgen v2` and [cbmp](https://github.com/ful1e5/cbmp)
@@ -18,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - colors preview with `.png` file in README.md
 - sponsorships updated
 
-## [v1.1.3] - 09 Nov 2021
+## [v1.1.3] - 09 November 2021
 
 ### Added
 
@@ -38,7 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - descriptive logs in bitmapping process
 - Fix `None` value warning in `builder/symlinks.py`
 
-## [v1.1.2] - 28 Jun 2021
+## [v1.1.2] - 28 June 2021
 
 ### Added
 
@@ -56,7 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Import `gdbuild` module directly inside `build.py`
 - Windows **True HiDPi Supports** inside build.py
 
-## [v1.1.1] - 29 Mar 2021
+## [v1.1.1] - 29 March 2021
 
 ### Added
 
@@ -74,7 +76,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Install `gbpkg` builder python package as user
 - Removed python3 `virtualenv` commands from `builder/Makefile`
 
-## [v1.1.0] - 08 Mar 2021
+## [v1.1.0] - 08 March 2021
 
 ### Added
 
@@ -90,7 +92,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Multiple cursors supports in `builder`
 - Dynamic theme-name & comments inside `builder/build.py`
 
-## [v1.0.1] - 17 Feb 2021
+## [v1.0.1] - 17 February 2021
 
 ### Added
 
@@ -108,7 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Customize sizes from `make`
 - CI workflow `build` compatibility with `make` commands
 
-## [v1.0.0] - 27 Oct 2020
+## [v1.0.0] - 27 October 2020
 
 ### Added
 
@@ -116,7 +118,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.3...main
+[unreleased]: https://github.com/ful1e5/Google_Cursor/compare/v2.0.0...main
+[v2.0.0]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.3...v2.0.0
 [v1.1.3]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.2...v1.1.3
 [v1.1.2]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.0...v1.1.2
 [v1.1.1]: https://github.com/ful1e5/Google_Cursor/compare/v1.1.0...v1.1.1
