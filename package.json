@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cbmp": "ful1e5/cbmp"
+  },
+  "scripts": {
+    "render:googledot-blue": "npx cbmp -d 'svg' -n 'GoogleDot-Blue' -bc '#4285F4' -oc '#FFFFFF'",
+    "render:googledot-black": "npx cbmp -d 'svg' -n 'GoogleDot-Black' -bc '#000000' -oc '#FFFFFF'",
+    "render:googledot-white": "npx cbmp -d 'svg' -n 'GoogleDot-White' -bc '#FFFFFF' -oc '#000000'",
+    "render:googledot-red": "npx cbmp -d 'svg' -n 'GoogleDot-Red' -bc '#FF0000' -oc '#FFFFFF'",
+    "render": "yarn render:googledot-blue && yarn render:googledot-black && yarn render:googledot-white && yarn render:googledot-red",
+    "build:googledot-blue": "ctgen build.toml -d 'bitmaps/GoogleDot-Blue' -n 'GoogleDot-Blue' -c 'Blue cursor theme inspired on Google'",
+    "build:googledot-black": "ctgen build.toml -d 'bitmaps/GoogleDot-Black' -n 'GoogleDot-Black' -c 'Black cursor theme inspired on Google'",
+    "build:googledot-white": "ctgen build.toml -d 'bitmaps/GoogleDot-White' -n 'GoogleDot-White' -c 'White cursor theme inspired on Google'",
+    "build:googledot-red": "ctgen build.toml -d 'bitmaps/GoogleDot-Red' -n 'GoogleDot-Red' -c 'Red cursor theme inspired on Google'",
+    "build": "yarn build:googledot-blue && yarn build:googledot-black && yarn build:googledot-white && yarn build:googledot-red"
+  }
+}

@@ -1,10 +1,8 @@
 # Google Cursor
 
-[![Build](https://github.com/ful1e5/Google_Cursor/workflows/build/badge.svg)](https://github.com/ful1e5/Google_Cursor/actions?query=workflow%3Abuild)
-[![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/google_cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/google_cursor)
-[![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
-
 An OpenSource cursor theme inspired by Google.
+
+[![Build](https://github.com/ful1e5/Google_Cursor/workflows/build/badge.svg)](https://github.com/ful1e5/Google_Cursor/actions?query=workflow%3Abuild)
 
 #### Cursor Sizes
 

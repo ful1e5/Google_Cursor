@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Refactor: build with `clickgen v2` and [cbmp](https://github.com/ful1e5/cbmp)
 - Add cursor `top_left_arrow` ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
 - Uninstall docs ful1e5/apple_cursor#79 ful1e5/apple_cursor#80
 

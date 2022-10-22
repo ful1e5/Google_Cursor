@@ -4,112 +4,48 @@ on:
   push:
     paths-ignore:
       - "**.md"
-      - "**.bbcode"
       - LICENSE
+      - .github/FUNDING.yml
     branches: [main, dev]
   pull_request:
     paths-ignore:
       - "**.md"
-      - "**.bbcode"
       - LICENSE
+      - .github/FUNDING.yml
     branches: [main]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
+
     steps:
       - uses: actions/checkout@v2
-      - name: Install build dependencies (apt)
-        run: sudo apt install -y libx11-dev libxcursor-dev libpng-dev
-        continue-on-error: false
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - name: Caching yarn packages
-        uses: actions/cache@v2
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - name: Set Up NodeJS 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
-      - name: Caching pip packages
-        uses: actions/cache@v2
-        id: pip-cache # use this to check for `cache-hit` (`steps.pip-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-      - name: Set up Python 3.8
+
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
-          python-version: "3.8"
-      - name: Generating `GoogleDot` Cursor Theme
-        run: make
+          python-version: ${{ matrix.python-version }}
+
+      - name: Installing pip dependencies
+        run: python -m pip install --upgrade pip clickgen
         continue-on-error: false
 
-      - name: Compressing UNIX theme
-        run: |
-          tar -cvzf GoogleDot-Blue.tar.gz themes/GoogleDot-Blue
-          tar -cvzf GoogleDot-Black.tar.gz themes/GoogleDot-Black
-          tar -cvzf GoogleDot-White.tar.gz themes/GoogleDot-White
-          tar -cvzf GoogleDot-Red.tar.gz themes/GoogleDot-Red
+      # https://github.com/returntocorp/semgrep/issues/4794
+      - name: Fixing 'attr' module error
+        run: pip install --force-reinstall --upgrade attrs
 
-      - name: Uploading `bitmaps` artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: bitmaps
-          path: bitmaps/*
+      - name: Building `GoogleDot Blue` Cursors
+        run: ctgen build.toml -d 'bitmaps/GoogleDot-Blue' -n 'GoogleDot-Blue' -c 'Blue cursor theme inspired on Google'
 
-      - name: Uploading `GoogleDot-Blue` UNIX Theme artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: GoogleDot-Blue
-          path: GoogleDot-Blue.tar.gz
+      - name: Building `GoogleDot White` Cursors
+        run: ctgen build.toml -d 'bitmaps/GoogleDot-White' -n 'GoogleDot-White' -c 'White cursor theme inspired on Google'
 
-      - name: Uploading `GoogleDot-Black` UNIX Theme artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: GoogleDot-Black
-          path: GoogleDot-Black.tar.gz
+      - name: Building `GoogleDot Black` Cursors
+        run: ctgen build.toml -d 'bitmaps/GoogleDot-Black' -n 'GoogleDot-Black' -c 'Black cursor theme inspired on Google'
 
-      - name: Uploading `GoogleDot-White` UNIX Theme artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: GoogleDot-White
-          path: GoogleDot-White.tar.gz
-
-      - name: Uploading `GoogleDot-Red` UNIX Theme artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: GoogleDot-Red
-          path: GoogleDot-Red.tar.gz
-
-      - name: Uploading `GoogleDot-Blue` Windows Theme artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: GoogleDot-Blue-Windows
-          path: themes/GoogleDot-Blue-Windows/*
-
-      - name: Uploading `GoogleDot-Black` Windows Theme artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: GoogleDot-Black-Windows
-          path: themes/GoogleDot-Black-Windows/*
-
-      - name: Uploading `GoogleDot-White` Windows Theme artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: GoogleDot-White-Windows
-          path: themes/GoogleDot-White-Windows/*
-
-      - name: Uploading `GoogleDot-Red` Windows Theme artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: GoogleDot-Red-Windows
-          path: themes/GoogleDot-Red-Windows/*
+      - name: Building `GoogleDot Red` Cursors
+        run: ctgen build.toml -d 'bitmaps/GoogleDot-Red' -n 'GoogleDot-Red' -c 'Red cursor theme inspired on Google'
