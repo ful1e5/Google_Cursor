@@ -102,6 +102,9 @@ Can be installed via Pamac (preinstalled in Manjaro), Paru or any other
 paru -S googledot-cursor-theme
 ```
 
+#### Nix/NixOS
+Nix users can install from the [package in nixpkgs](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor) (Maintained by [@Henry-Hiles](https://github.com/Henry-Hiles)). Installation instructions can be found by clicking on the title of the [nix package](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor). The nix package is currently __only__ available in unstable.
+
 ## Installing Google Cursor
 
 #### Linux/X11
