@@ -27,6 +27,7 @@ N/A
 ![GoogleDot Black](https://i.imgur.com/9ZlC1gD.png)
 ![GoogleDot White](https://i.imgur.com/67KgJ3s.png)
 ![GoogleDot Red](https://imgur.com/VtauWGC.png)
+![GoogleDot Purple](https://i.imgur.com/sgQ6QFy.png)
 
 > **Note**
 > All cursor's `.svg` files are found in [svg](./svg) directory or you can also find them on
@@ -70,12 +71,17 @@ N/A
 
 ### GoogleDot White
 
-- Base Color - `#FFFFFF` (Black)
-- Outline Color - `#000000` (White)
+- Base Color - `#FFFFFF` (White)
+- Outline Color - `#000000` (Black)
 
 ### GoogleDot Red
 
 - Base Color - `#FF0000` (Red)
+- Outline Color - `#FFFFFF` (White)
+
+### GoogleDot Purple
+
+- Base Color - `#9542F4` (Purple)
 - Outline Color - `#FFFFFF` (White)
 
 ## How to get it
@@ -199,6 +205,7 @@ ctgen build.toml -d 'bitmaps/GoogleDot-Blue' -n 'GoogleDot-Blue' -c 'Blue cursor
 ctgen build.toml -d 'bitmaps/GoogleDot-Black' -n 'GoogleDot-Black' -c 'Black cursor theme inspired on Google'
 ctgen build.toml -d 'bitmaps/GoogleDot-White' -n 'GoogleDot-White' -c 'White cursor theme inspired on Google'
 ctgen build.toml -d 'bitmaps/GoogleDot-Red' -n 'GoogleDot-Red' -c 'Red cursor theme inspired on Google'
+ctgen build.toml -d 'bitmaps/GoogleDot-Purple' -n 'GoogleDot-Purple' -c 'Purple cursor theme inspired on Google'
 ```
 
 Afterwards, the themes can be found in the `themes` directory.
@@ -256,6 +263,7 @@ npx cbmp -d 'svg' -n 'GoogleDot-Blue' -bc '#4285F4' -oc '#FFFFFF'
 npx cbmp -d 'svg' -n 'GoogleDot-Black' -bc '#000000' -oc '#FFFFFF'
 npx cbmp -d 'svg' -n 'GoogleDot-White' -bc '#FFFFFF' -oc '#000000'
 npx cbmp -d 'svg' -n 'GoogleDot-Red' -bc '#FF0000' -oc '#FFFFFF'
+npx cbmp -d 'svg' -n 'GoogleDot-Purple' -bc '#9542F4' -oc '#FFFFFF'
 ```
 
 #### Examples

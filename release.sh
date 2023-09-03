@@ -6,6 +6,7 @@ names["GoogleDot-Blue"]="Blue cursor theme inspired on Google"
 names["GoogleDot-Black"]="Black cursor theme inspired on Google"
 names["GoogleDot-White"]="White cursor theme inspired on Google"
 names["GoogleDot-Red"]="Red cursor theme inspired on Google"
+names["GoogleDot-Purple"]="Purple cursor theme inspired on Google"
 
 # Cleanup old builds
 rm -rf themes bin
