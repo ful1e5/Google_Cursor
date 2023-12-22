@@ -4,22 +4,15 @@ An OpenSource cursor theme inspired by Google.
 
 [![Build](https://github.com/ful1e5/Google_Cursor/workflows/build/badge.svg)](https://github.com/ful1e5/Google_Cursor/actions?query=workflow%3Abuild)
 
-## Google Cursor needs your Input
+## Notes
 
-Until 2021 my cursors projects were well funded by [pling.com](https://www.pling.com) but since the
-[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
-are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
-Google Cursor and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)
-or DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support my projects,
-I will gladly look into it and post your avatar in the project's README.
+-   All cursor's SVG files are found in [svg](./svg) directory or you can also find them on
+    [Figma](https://www.figma.com/file/i7nfGDWCTWlNJlnhmvHDfh/Google-Cursor?node-id=0%3A1).
 
-I appreciate all the wonderful people who patronize and sponsoring my work.
+<!-- If you're interested, you can learn more about "sponsor-spotlight" on
+ https://dev.to/ful1e5/lets-give-recognition-to-those-supporting-our-work-on-github-sponsors-b00 -->
 
-## Sponsors
-
-<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
-
-N/A
+![shoutout-sponsors](https://sponsor-spotlight.vercel.app/sponsor?login=ful1e5)
 
 ---
 
@@ -27,10 +20,6 @@ N/A
 ![GoogleDot Black](https://i.imgur.com/9ZlC1gD.png)
 ![GoogleDot White](https://i.imgur.com/67KgJ3s.png)
 ![GoogleDot Red](https://imgur.com/VtauWGC.png)
-
-> **Note**
-> All cursor's `.svg` files are found in [svg](./svg) directory or you can also find them on
-> [Figma](https://www.figma.com/file/i7nfGDWCTWlNJlnhmvHDfh/Google-Cursor?node-id=0%3A1).
 
 ## Cursor Sizes
 
@@ -51,32 +40,32 @@ N/A
 
 ### Windows Cursor Size:
 
-- <kbd>16x16</kbd> - Small
-- <kbd>24x24</kbd> - Regular
-- <kbd>32x32</kbd> - Large
-- <kbd>48x48</kbd> - Extra Large
+-   <kbd>16x16</kbd> - Small
+-   <kbd>24x24</kbd> - Regular
+-   <kbd>32x32</kbd> - Large
+-   <kbd>48x48</kbd> - Extra Large
 
 ## Colors:
 
 ### GoogleDot Blue
 
-- Base Color - `#4285F4` (Blue)
-- Outline Color - `#FFFFFF` (White)
+-   Base Color - `#4285F4` (Blue)
+-   Outline Color - `#FFFFFF` (White)
 
 ### GoogleDot Black
 
-- Base Color - `#000000` (Black)
-- Outline Color - `#FFFFFF` (White)
+-   Base Color - `#000000` (Black)
+-   Outline Color - `#FFFFFF` (White)
 
 ### GoogleDot White
 
-- Base Color - `#FFFFFF` (Black)
-- Outline Color - `#000000` (White)
+-   Base Color - `#FFFFFF` (Black)
+-   Outline Color - `#000000` (White)
 
 ### GoogleDot Red
 
-- Base Color - `#FF0000` (Red)
-- Outline Color - `#FFFFFF` (White)
+-   Base Color - `#FF0000` (Red)
+-   Outline Color - `#FFFFFF` (White)
 
 ## How to get it
 
@@ -103,7 +92,8 @@ paru -S googledot-cursor-theme
 ```
 
 #### Nix/NixOS
-Nix users can install from the [package in nixpkgs](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor) (Maintained by [@Henry-Hiles](https://github.com/Henry-Hiles)). Installation instructions can be found by clicking on the title of the [nix package](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor). The nix package is currently __only__ available in unstable.
+
+Nix users can install from the [package in nixpkgs](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor) (Maintained by [@Henry-Hiles](https://github.com/Henry-Hiles)). Installation instructions can be found by clicking on the title of the [nix package](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor). The nix package is currently **only** available in unstable.
 
 ## Installing Google Cursor
 
@@ -153,25 +143,25 @@ Run the `uninstall.bat` script packed with the `.zip` archive
 
 #### Notes
 
-- Google Cursor build configuration and cursor hotspot settings are bundled in the `build.toml` file.
-- Check out the scripts section in [package.json](./package.json) to see how we build the cursor theme,
-  excluding the render scripts. They are useful for converting `.svg` files to `.png` files.
-- yarn is optional, For building XCursors and Windows cursors from `.png` files or resizing them
-  you don't need that. If you want to develop/modify Google Cursor's colors, and bitmaps, or generate a png
-  file from a svg, Then you can use yarn because bitmapper is written in TypeScript.
-- Since Google Cursor variants are designed similarly, they share the same hotspot settings so a
-  single configuration file `build.toml` is responsible for building all variants. Due to this, you will have
-  to change the following options in `ctgen` to build the appropriate variant:
-  - **-d**: bitmaps directory
-  - **-n**: The name you want to give to the generated theme.
-  - **-c**: Theme comment.
-  - See `ctgen --help` for all available options.
+-   Google Cursor build configuration and cursor hotspot settings are bundled in the `build.toml` file.
+-   Check out the scripts section in [package.json](./package.json) to see how we build the cursor theme,
+    excluding the render scripts. They are useful for converting `.svg` files to `.png` files.
+-   yarn is optional, For building XCursors and Windows cursors from `.png` files or resizing them
+    you don't need that. If you want to develop/modify Google Cursor's colors, and bitmaps, or generate a png
+    file from a svg, Then you can use yarn because bitmapper is written in TypeScript.
+-   Since Google Cursor variants are designed similarly, they share the same hotspot settings so a
+    single configuration file `build.toml` is responsible for building all variants. Due to this, you will have
+    to change the following options in `ctgen` to build the appropriate variant:
+    -   **-d**: bitmaps directory
+    -   **-n**: The name you want to give to the generated theme.
+    -   **-c**: Theme comment.
+    -   See `ctgen --help` for all available options.
 
 ### Build prerequisites
 
-- Python version 3.7 or higher
-- [clickgen](https://github.com/ful1e5/clickgen)>=2.1.2 (`pip install clickgen`)
-- [yarn](https://github.com/yarnpkg/yarn)
+-   Python version 3.7 or higher
+-   [clickgen](https://github.com/ful1e5/clickgen)>=2.1.2 (`pip install clickgen`)
+-   [yarn](https://github.com/yarnpkg/yarn)
 
 ### Quick start
 
