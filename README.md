@@ -93,7 +93,38 @@ paru -S googledot-cursor-theme
 
 #### Nix/NixOS
 
-Nix users can install from the [package in nixpkgs](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor) (Maintained by [@Henry-Hiles](https://github.com/Henry-Hiles)). Installation instructions can be found by clicking on the title of the [nix package](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor). The nix package is currently **only** available in unstable.
+Nix users can use the [package in nixpkgs](https://search.nixos.org/packages?channel=unstable&buckets=%7B%22package_attr_set%22%3A%5B%5D%2C%22package_license_set%22%3A%5B%5D%2C%22package_maintainers_set%22%3A%5B%22Henry%20Hiles%22%5D%2C%22package_platforms%22%3A%5B%5D%7D&query=google_cursor) (Maintained by [@Henry-Hiles](https://github.com/Henry-Hiles)). The nix package is currently **only** available in unstable.
+
+To use it, you can point to the cursors exposed by the package using your method of choice, depending on your DE and NixOS modules:
+
+- GNOME + home-manager:
+
+  ```nix
+  # in home.nix
+  { pkgs, config, ... }:
+  {
+      gtk = {
+          enable = true;
+          cursorTheme = {
+              name = "GoogleDot-Black"; // ← or Blue, Red, Red
+              package = pkgs.google-cursor;
+          };
+      };
+  }
+  ```
+- Stylix:
+
+  ```nix
+  # in stylix.nix
+  stylix = {
+      enable = true;
+      cursor = {
+          name = "GoogleDot-Blue";
+          package = pkgs.google-cursor;
+          size = 24;
+      };
+  };
+  ```
 
 ## Installing Google Cursor
 
